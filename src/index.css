@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import "tailwindcss";
+
+.link{
+  @apply p-2.5 flex rounded-md gap-6 items-center md:cursor-pointer cursor-default duration-300 font-medium ;
+}
+.active{
+  @apply bg-neutral-300 dark:bg-neutral-600 dark:text-neutral-200 text-neutral-600;
+}
+
+
+/* body{
+  @apply max-w-7xl mx-auto container;
+} */
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+body{
+  @apply bg-gray-100;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.icon-ilang-timbul {
+  animation: ilang-timbul 0.8s infinite;
+}
+@keyframes ilang-timbul {
+  0% {
+    scale: 0;
+  }
+  60% {
+    scale: 1.2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 30s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 30s linear infinite;
+}
+
+@media (max-width: 389px) {
+  .wrap-txt {
+    margin-top: 10px;
+  }
+}

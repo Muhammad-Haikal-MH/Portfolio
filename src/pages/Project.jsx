@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router'
-import { project } from '../data/data'
+import { project } from '../data/Data'
 
 export default function Project() {
 

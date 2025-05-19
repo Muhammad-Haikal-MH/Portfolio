@@ -7,7 +7,7 @@ import { GiTimeTrap } from "react-icons/gi";
 import { useState } from "react";
 import { Link } from "react-router";
 import Lanyard from "../Home/Lanyard";
-import { icon } from "../data/data";
+import { icon } from "../data/Data";
 
 export default function Home() {
   const [velocity, setVelocity] = useState(100);

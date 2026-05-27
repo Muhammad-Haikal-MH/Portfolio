@@ -178,7 +178,7 @@ export const project = [
     img: p8,
     intro: 'This is a personal website to showcase my projects and my skill development.',
     porto: 'To showcasing my awesome projects. You can see this feature',
-    demo: ''
+    demo: 'https://muhammadhaikal.vercel.app/'
   },
   {
     id: '2',
@@ -335,3 +335,4 @@ export const icon = [
     icon:mongo,
   }
 ]
+

@@ -1,5 +1,5 @@
 import React from "react";
-import { Data } from '../data/data'
+import { Data } from '../data/Data'
 import { motion } from 'framer-motion'
 
 export default function Achievement() {

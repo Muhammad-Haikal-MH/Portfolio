@@ -1,6 +1,6 @@
 import React from 'react'
 import { useNavigate, useParams } from 'react-router'
-import { project } from '../data/data';
+import { project } from '../data/Data';
 import { motion } from 'framer-motion'
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";

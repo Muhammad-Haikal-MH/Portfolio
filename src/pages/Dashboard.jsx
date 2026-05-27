@@ -10,7 +10,7 @@ export default function Dashboard() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCount(prev => {
-        if (prev >= 8) {
+        if (prev >= 10) {
           clearInterval(interval);
           return prev;
         }
@@ -43,7 +43,7 @@ export default function Dashboard() {
           <span class="text-sm dark:text-neutral-400">Technologies Learned</span>
           <div>
             <span class="text-xl font-medium text-green-600 lg:text-2xl">
-              {count}
+              {count}+
             </span>
           </div>
         </div>
@@ -72,7 +72,7 @@ export default function Dashboard() {
           <span class="text-sm dark:text-neutral-400">Projects Built</span>
           <div>
             <span class="text-xl font-medium text-green-600 lg:text-2xl">
-              7++
+              10+
             </span>
           </div>
         </div>

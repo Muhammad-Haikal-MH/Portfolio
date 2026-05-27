@@ -22,9 +22,7 @@ export default function Home() {
         <RotatingText
           texts={[
             "Muhammad Haikal",
-            "Web Developer",
-            "Frond End Developer",
-            "Full Stack Developer",
+            "IT Enthusiast",
           ]}
           mainClassName="md:text-4xl text-2xl font-semibold wrap-txt mt-7"
           staggerFrom={"last"}
@@ -47,11 +45,9 @@ export default function Home() {
 
       <div>
         <p className="mt-5 text-md md:text-[15px] leading-7">
-          Frontend-focused Web Developer in progress, passionate about crafting
-          responsive and user-friendly interfaces. Currently deepening skills in
-          React and modern frontend tools, while preparing to expand into
-          full-stack development. Always eager to learn, build, and grow through
-          real-world projects and continuous improvement.
+          IT enthusiast with strong interests in Data Analytics, Data Science, Machine Learning, and Full-Stack Development. 
+          Experienced in building data-driven and web-based applications. Passionate about solving real-world problems
+          with technology while continuously learning and exploring new innovations.
         </p>
 
         <hr className="mt-8 text-gray-400" />
@@ -114,10 +110,8 @@ export default function Home() {
         </div>
         <div className="mt-5">
           <span className="leading-7 text-md md:text-[15px] ">
-            Freelance Frontend Development I offer custom, responsive, and
-            user-focused web development using modern tools like React,
-            Tailwind, and JavaScript—ideal for individuals, student projects,
-            and small businesses.
+            Technology Enthusiast Interested in web development, data analytics, and machine learning 
+            with a lot of hands-on experience and problem solving.
           </span>
         </div>
 

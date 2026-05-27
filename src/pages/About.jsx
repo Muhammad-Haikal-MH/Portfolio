@@ -17,19 +17,19 @@ export default function About() {
 
       <div className='mt-7 leading-8 text-[15px]'>
         <p className='mb-4'>
-        Hello and welcome to my personal website! I'm Muhammad Haikal, an active student at Telkom University and a tech enthusiast who is currently focused on frontend development. With a strong passion for becoming a full-stack developer, I actively explore the world of web development — starting from the fundamentals like HTML, CSS, and JavaScript, to modern frameworks such as React. I'm also continuously learning various concepts, tools, and technologies to broaden my knowledge and strengthen my foundation in this field.
+          Hello and welcome to my personal website! I'm Muhammad Haikal, a Smart City Information Systems student at Telkom University with strong interests in technology, data analytics, machine learning, and software development. I enjoy exploring how technology and data can be used to solve real-world problems and create meaningful digital solutions.
         </p>
 
         <p className='mb-4'>
-        I enjoy building clean, responsive, and interactive user interfaces. I dive deep into essential concepts such as component-based architecture, state management with hooks, as well as React Router and Redux to create modern and efficient web applications.
+          Throughout my academic journey, I have worked on various projects involving data analysis, machine learning, visualization dashboards, and modern web development using tools such as Python, SQL, JavaScript, React, Tableau, and other technologies. I also actively participate in competitions, collaborative projects, and organizational activities to continuously improve both my technical and problem-solving skills.
         </p>
 
         <p className='mb-4'>
-        I believe that progress comes from consistency, hands-on practice, and openness to feedback. Through personal and collaborative projects, I continue to improve both my technical skills and soft skills like teamwork, communication, and adaptability. For me, building meaningful digital solutions is not just about writing code — it’s about creating valuable experiences for users.
+          I believe that continuous learning, consistency, and hands-on experience are essential for growth in the technology field. Beyond technical skills, I also value teamwork, communication, adaptability, and the ability to turn ideas into impactful solutions.
         </p>
 
         <p className='mb-4'>
-        Thank you for visiting. I'm always open to connect and collaborate!
+        Thank you for visiting my website. Feel free to explore my projects and connect with me!
         </p>
         <hr className='mt-7'/>
       </div>

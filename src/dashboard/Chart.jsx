@@ -39,20 +39,92 @@ const Chart = () => {
   // Define the learning technologies and their time ranges
   const learningData = [
     {
-      id: 'redux',
-      label: 'Redux',
-      start: new Date('2025-04-01'),
-      end: new Date('2025-04-30'),
-      backgroundColor: 'rgba(236, 72, 153, 0.7)', // pink-500
+      id: 'sklearn',
+      label: 'Scikit-learn',
+      start: new Date('2026-02-30'),
+      end: new Date('2026-05-30'),
+      backgroundColor: 'rgba(14, 145, 213, 0.7)', // 
       borderColor: 'rgb(236, 72, 153)',
     },
     {
-      id: 'router',
-      label: 'React Router',
-      start: new Date('2025-04-01'),
-      end: new Date('2025-04-30'),
-      backgroundColor: 'rgba(16, 185, 129, 0.7)', // emerald-500
-      borderColor: 'rgb(16, 185, 129)',
+      id: 'matplotlib',
+      label: 'Matplotlib',
+      start: new Date('2026-03-10'),
+      end: new Date('2026-03-20'),
+      backgroundColor: 'rgba(14, 145, 213, 0.7)', // 
+      borderColor: 'rgb(236, 72, 153)',
+    },
+    {
+      id: 'pandas',
+      label: 'Pandas',
+      start: new Date('2026-01-30'),
+      end: new Date('2026-02-30'),
+      backgroundColor: 'rgba(14, 145, 213, 0.7)', // 
+      borderColor: 'rgb(236, 72, 153)',
+    },
+    {
+      id: 'numpy',
+      label: 'Numpy',
+      start: new Date('2026-01-01'),
+      end: new Date('2026-01-25'),
+      backgroundColor: 'rgba(14, 145, 213, 0.7)', // 
+      borderColor: 'rgb(236, 72, 153)',
+    },
+    {
+      id: 'python',
+      label: 'Python',
+      start: new Date('2025-12-01'),
+      end: new Date('2025-12-27'),
+      backgroundColor: 'rgba(14, 145, 213, 0.7)', // 
+      borderColor: 'rgb(236, 72, 153)',
+    },
+    {
+      id: 'nextjs',
+      label: 'Next JS',
+      start: new Date('2025-09-01'),
+      end: new Date('2025-10-17'),
+      backgroundColor: 'rgba(14, 145, 213, 0.7)', // 
+      borderColor: 'rgb(236, 72, 153)',
+    },
+    {
+      id: 'tableau',
+      label: 'Tableau',
+      start: new Date('2025-09-01'),
+      end: new Date('2025-12-20'),
+      backgroundColor: 'rgba(14, 145, 213, 0.7)', // 
+      borderColor: 'rgb(236, 72, 153)',
+    },
+    {
+      id: 'mongodb',
+      label: 'MongoDB',
+      start: new Date('2025-08-15'),
+      end: new Date('2025-09-25'),
+      backgroundColor: 'rgba(14, 145, 213, 0.7)', // 
+      borderColor: 'rgb(236, 72, 153)',
+    },
+    {
+      id: 'expressjs',
+      label: 'Express JS',
+      start: new Date('2025-06-01'),
+      end: new Date('2025-07-10'),
+      backgroundColor: 'rgba(14, 145, 213, 0.7)', // 
+      borderColor: 'rgb(236, 72, 153)',
+    },
+    {
+      id: 'nodejs',
+      label: 'Node JS',
+      start: new Date('2025-05-01'),
+      end: new Date('2025-05-20'),
+      backgroundColor: 'rgba(14, 145, 213, 0.7)', // 
+      borderColor: 'rgb(236, 72, 153)',
+    },
+    {
+      id: 'mysql',
+      label: 'MySQL',
+      start: new Date('2025-02-01'),
+      end: new Date('2025-06-01'),
+      backgroundColor: 'rgba(14, 145, 213, 0.7)', // 
+      borderColor: 'rgb(236, 72, 153)',
     },
     {
       id: 'react',
@@ -135,7 +207,7 @@ const Chart = () => {
           },
         },
         min: new Date('2024-08-01'),
-        max: new Date('2025-04-30'),
+        max: new Date('2026-04-30'),
         adapters: {
           date: {
             locale: enUS,

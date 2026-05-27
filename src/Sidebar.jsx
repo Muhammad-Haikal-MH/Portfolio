@@ -163,7 +163,7 @@ export default function Sidebar() {
                     </li>
                     <li className='group hover:bg-neutral-200 hover:dark:bg-neutral-800 hover:rounded-md hover:scale-110 duration-150'>
                         <NavLink to="/project" className={'link'}>
-                        <LuLayoutDashboard size={23} className='min-w-max group-hover:-rotate-[25deg] duration-300'/>
+                        <GoProject size={23} className='min-w-max group-hover:-rotate-[25deg] duration-300'/>
                         Project
                         </NavLink>
                     </li>

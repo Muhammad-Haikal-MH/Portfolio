@@ -5,9 +5,83 @@ import g4 from '../assets/sertif/g4.png';
 import g5 from '../assets/sertif/g5.png';
 import g6 from '../assets/sertif/g6.png';
 import g7 from '../assets/sertif/g7.png';
+import g8 from '../assets/sertif/g8.png';
+import g9 from '../assets/sertif/g9.png';
+import g10 from '../assets/sertif/g10.png';
+import g11 from '../assets/sertif/g11.jpeg';
+import g12 from '../assets/sertif/g12.png';
+import g13 from '../assets/sertif/g13.png';
+import g14 from '../assets/sertif/g14.jpeg';
+import g15 from '../assets/sertif/g15.png';
+
+
 export const Data = [
-    {
+  {
     id: '1',
+    imageUrl: 'https://www.dicoding.com/certificates/EYX4QOR3OPDL',
+    gambar: g8,
+    title: 'Penerapan Data Science dengan Microsoft Fabric',
+    organization: 'Dicoding x Microsoft',
+    issueDate: 'May 2026',
+  },
+  {
+    id: '2',
+    imageUrl: 'https://www.dicoding.com/certificates/MRZMWNMMRPYQ',
+    gambar: g9,
+    title: 'Dasar AI',
+    organization: 'Dicoding x DBS Foundation',
+    issueDate: 'May 2026',
+  },
+  {
+    id: '3',
+    imageUrl: 'waiting for link',
+    gambar: g10,
+    title: 'Finalist Hackathon Innovate Code-Up',
+    organization: 'ASTRA Tech',
+    issueDate: 'May 2026',
+  },
+  {
+    id: '4',
+    imageUrl: 'https://drive.google.com/file/d/1ZnDI-y9aeo6wTlE_EzIpZleXLoIflrEv/view?usp=drive_link',
+    gambar: g11,
+    title: 'Finalist Innovation Competition',
+    organization: 'Telkom University',
+    issueDate: 'Feb 2026',
+  },
+  {
+    id: '5',
+    imageUrl: 'https://drive.google.com/file/d/1dk9iiXFvDWJoRyJsQp-e0dPRLOmmf0t0/view?usp=drive_link',
+    gambar: g12,
+    title: 'Finalist International Business Plan Competition',
+    organization: 'Ciputra University',
+    issueDate: 'Feb 2026',
+  },
+  {
+    id: '6',
+    imageUrl: 'https://drive.google.com/file/d/1uUfo9EO8hq2lehPCTKzUssPcXBjQT1Cv/view?usp=drive_link',
+    gambar: g13,
+    title: '4th place UI UX Competition',
+    organization: 'Telkom University Purwokerto',
+    issueDate: 'November 2025',
+  },
+  {
+    id: '7',
+    imageUrl: '',
+    gambar: g14,
+    title: 'Open House 2025',
+    organization: 'Telkom University',
+    issueDate: 'Dec 2025',
+  },
+  {
+    id: '8',
+    imageUrl: '',
+    gambar: g15,
+    title: 'FIT EXPO 2025',
+    organization: 'Telkom University',
+    issueDate: 'Jun 2025',
+  },
+  {
+    id: '7',
     imageUrl: 'https://www.codepolitan.com/c/AHZR9BD/',
     gambar: g1,
     title: 'Belajar Javascript',
@@ -15,7 +89,7 @@ export const Data = [
     issueDate: 'November 2024',
   },
   {
-    id: '2',
+    id: '8',
     imageUrl: 'https://www.codepolitan.com/c/6QFKRAA/',
     gambar: g2,
     title: 'Belajar Konsep OOP di Javascript',
@@ -23,7 +97,7 @@ export const Data = [
     issueDate: 'January 2025',
   },
   {
-    id: '3',
+    id: '9',
     imageUrl: 'https://www.codepolitan.com/c/E1BAVQU/',
     gambar: g3,
     title: 'Belajar Javascript Asynchronous',
@@ -31,7 +105,7 @@ export const Data = [
     issueDate: 'January 2025',
   },
   {
-    id: '4',
+    id: '10',
     imageUrl: 'https://www.codepolitan.com/c/QZIFGIB/',
     gambar: g4,
     title: 'Belajar Javascript DOM',
@@ -39,7 +113,7 @@ export const Data = [
     issueDate: 'November 2024',
   },
   {
-    id: '5',
+    id: '11',
     imageUrl: 'https://www.codepolitan.com/c/L83NEBF/',
     gambar: g5,
     title: 'Belajar AJAX dan Web API',
@@ -47,14 +121,14 @@ export const Data = [
     issueDate: 'January 2025',
   },
   {
-    id: '6',
+    id: '12',
     imageUrl: 'https://www.codepolitan.com/c/FJHNIKE/',
     gambar: g6,
     title: 'Belajar React Fundamental',
     organization: 'CODEPOLITAN',
     issueDate: 'February 2025',
   },
-  { id: '7',
+  { id: '13',
     imageUrl: 'https://www.udemy.com/certificate/UC-31ad8e8d-4560-413a-a579-bcc23c2bafb2/',
     gambar: g7,
     title: 'Belajar React sampai mahir',
@@ -83,6 +157,16 @@ import router from '../assets/skill/reactrouter-color.svg'
 import vite from '../assets/skill/vite-color.svg'
 import tailwind from '../assets/skill/tailwindcss-color.svg'
 import framer from '../assets/skill/framer-color.svg'
+import next from '../assets/skill/nextjs.svg'
+import python from '../assets/skill/python.svg'
+import tableau from '../assets/skill/tableau.png'
+import numpy from '../assets/skill/numpy.svg'
+import pandas from '../assets/skill/pandas.svg'
+import sklearn from '../assets/skill/sklearn.svg'
+import matplotlib from '../assets/skill/matplotlib.svg'
+import mysql from '../assets/skill/mysql.svg'
+import mongo from '../assets/skill/mongo.svg'
+
 
 
 export const project = [
@@ -205,4 +289,49 @@ export const icon = [
     nama: 'Redux',
     icon:redux,
   },
+  {
+    id: '9',
+    nama: 'Next JS',
+    icon:next,
+  },
+  {
+    id: '10',
+    nama: 'Tableau',
+    icon:tableau,
+  },
+  {
+    id: '11',
+    nama: 'Python',
+    icon:python,
+  },
+  {
+    id: '12',
+    nama: 'Numpy',
+    icon:numpy,
+  },
+  {
+    id: '13',
+    nama: 'Pandas',
+    icon:pandas,
+  },
+  {
+    id: '14',
+    nama: 'Scikit-learn',
+    icon:sklearn,
+  },
+  {
+    id: '15',
+    nama: 'Matplotlib',
+    icon:matplotlib,
+  },
+  {
+    id: '16',
+    nama: 'MySQL',
+    icon:mysql,
+  },
+  {
+    id: '17',
+    nama: 'MongoDB',
+    icon:mongo,
+  }
 ]

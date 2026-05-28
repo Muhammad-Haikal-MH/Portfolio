@@ -1,6 +1,6 @@
 import React from "react";
-import { Data } from '../data/Data'
-import { motion } from 'framer-motion'
+import { Data } from "../data/Data";
+import { motion } from "framer-motion";
 
 export default function Achievement() {
   return (
@@ -19,7 +19,8 @@ export default function Achievement() {
       <div className="min-h-screen py-10 px-4">
         <div className=" mx-auto grid grid-cols-1 sm:grid-cols-2 lg lg:grid-cols-3 gap-6 ">
           {Data.map((cert, index) => (
-            <a href={cert.imageUrl}
+            <a
+              href={cert.imageUrl}
               key={index}
               className="rounded-xl shadow-md overflow-hidden hover:shadow-xl duration-200 border hover:border-2 hover:scale-105 transition-all border-neutral-300 dark:border-neutral-600 bg-neutral-200 dark:bg-neutral-800 group"
             >
@@ -29,7 +30,7 @@ export default function Achievement() {
                   alt={cert.title}
                   className="w-full object-contain group-hover:brightness-50 transition-all duration-200"
                 />
-                
+
                 <div className="p-4 ">
                   <h3 className="text-lg font-medium  mb-1 line-clamp-2">
                     {cert.title}
@@ -42,7 +43,6 @@ export default function Achievement() {
                   </p>
                 </div>
               </div>
-
             </a>
           ))}
         </div>

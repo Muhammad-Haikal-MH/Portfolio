@@ -1,6 +1,6 @@
 import React from "react";
 import Chart from "../dashboard/Chart";
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -9,7 +9,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCount(prev => {
+      setCount((prev) => {
         if (prev >= 10) {
           clearInterval(interval);
           return prev;
@@ -20,7 +20,7 @@ export default function Dashboard() {
 
     return () => clearInterval(interval);
   }, []);
-  
+
   return (
     <motion.div
       initial={{ x: 100, opacity: 0 }}
@@ -34,71 +34,69 @@ export default function Dashboard() {
       <hr className="w-full border-1 border-dashed"></hr>
 
       <div className="grid grid-cols-2 md:grid-cols-4 mt-10 gap-4">
-
-      <div class="rounded-xl w-full border-[1.5px] border-neutral-300 p-1 shadow-sm dark:border-[#333333]">
-        <div
-          class="rounded-lg bg-gradient-to-b
+        <div class="rounded-xl w-full border-[1.5px] border-neutral-300 p-1 shadow-sm dark:border-[#333333]">
+          <div
+            class="rounded-lg bg-gradient-to-b
         from-neutral-200 to-neutral-100 transition-all duration-300 hover:to-[#ffffff] dark:from-[#242424] dark:to-neutral-900 dark:hover:to-neutral-950 flex flex-col self-center bg-neutral-100 px-4 py-3"
-        >
-          <span class="text-sm dark:text-neutral-400">Technologies Learned</span>
-          <div>
-            <span class="text-xl font-medium text-green-600 lg:text-2xl">
-              {count}+
+          >
+            <span class="text-sm dark:text-neutral-400">
+              Technologies Learned
             </span>
+            <div>
+              <span class="text-xl font-medium text-green-600 lg:text-2xl">
+                {count}+
+              </span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="rounded-xl w-full border-[1.5px] border-neutral-300 p-1 shadow-sm dark:border-[#333333]">
-        <div
-          class="rounded-lg bg-gradient-to-b
+        <div class="rounded-xl w-full border-[1.5px] border-neutral-300 p-1 shadow-sm dark:border-[#333333]">
+          <div
+            class="rounded-lg bg-gradient-to-b
         from-neutral-200 to-neutral-100 transition-all duration-300 hover:to-[#ffffff] dark:from-[#242424] dark:to-neutral-900 dark:hover:to-neutral-950 flex flex-col self-center bg-neutral-100 px-4 py-3"
-        >
-          <span class="text-sm dark:text-neutral-400">Learning Hours</span>
-          <div>
-            <span class="text-xl font-medium text-green-600 lg:text-2xl">
-              1 - 2
-              <span className="ml-2 text-sm">hour/ day</span>
-            </span>
+          >
+            <span class="text-sm dark:text-neutral-400">Learning Hours</span>
+            <div>
+              <span class="text-xl font-medium text-green-600 lg:text-2xl">
+                1 - 2<span className="ml-2 text-sm">hour/ day</span>
+              </span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="rounded-xl w-full border-[1.5px] border-neutral-300 p-1 shadow-sm dark:border-[#333333]">
-        <div
-          class="rounded-lg bg-gradient-to-b
+        <div class="rounded-xl w-full border-[1.5px] border-neutral-300 p-1 shadow-sm dark:border-[#333333]">
+          <div
+            class="rounded-lg bg-gradient-to-b
         from-neutral-200 to-neutral-100 transition-all duration-300 hover:to-[#ffffff] dark:from-[#242424] dark:to-neutral-900 dark:hover:to-neutral-950 flex flex-col self-center bg-neutral-100 px-4 py-3"
-        >
-          <span class="text-sm dark:text-neutral-400">Projects Built</span>
-          <div>
-            <span class="text-xl font-medium text-green-600 lg:text-2xl">
-              10+
-            </span>
+          >
+            <span class="text-sm dark:text-neutral-400">Projects Built</span>
+            <div>
+              <span class="text-xl font-medium text-green-600 lg:text-2xl">
+                10+
+              </span>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="rounded-xl w-full border-[1.5px] border-neutral-300 p-1 shadow-sm dark:border-[#333333]">
-        <div
-          class="rounded-lg bg-gradient-to-b
+        <div class="rounded-xl w-full border-[1.5px] border-neutral-300 p-1 shadow-sm dark:border-[#333333]">
+          <div
+            class="rounded-lg bg-gradient-to-b
         from-neutral-200 to-neutral-100 transition-all duration-300 hover:to-[#ffffff] dark:from-[#242424] dark:to-neutral-900 dark:hover:to-neutral-950 flex flex-col self-center bg-neutral-100 px-4 py-3"
-        >
-          <span class="text-sm dark:text-neutral-400">Active Since</span>
-          <div>
-            <span class="text-xl font-medium text-green-600 lg:text-2xl">
-              Aug 
-              <span className="ml-2 text-sm">2024</span>
-            </span>
+          >
+            <span class="text-sm dark:text-neutral-400">Active Since</span>
+            <div>
+              <span class="text-xl font-medium text-green-600 lg:text-2xl">
+                Aug
+                <span className="ml-2 text-sm">2024</span>
+              </span>
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* dashboard */}
-
+        {/* dashboard */}
       </div>
       <div className="w-full h-[500px] mt-10">
-        <Chart/>
-
+        <Chart />
       </div>
     </motion.div>
   );

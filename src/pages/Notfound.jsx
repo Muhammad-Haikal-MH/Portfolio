@@ -23,9 +23,10 @@ export default function Notfound() {
                   <FaExclamationTriangle size={80} className="text-red-500" />
                 </div>
                 {/* <AlertTriangle size={80} className="text-red-500 relative" /> */}
-                  <FaExclamationTriangle size={80} className="text-red-500 relative" />
-
-                
+                <FaExclamationTriangle
+                  size={80}
+                  className="text-red-500 relative"
+                />
               </div>
             </div>
 

@@ -9,10 +9,10 @@
 // }) {
 //   return (
 //     <div className=''>
-        
+
 //       <div className="relative">
-//         <img 
-//           src={imageUrl} 
+//         <img
+//           src={imageUrl}
 //           alt={title}
 //           className="w-full aspect-[4/3] object-cover"
 //         />

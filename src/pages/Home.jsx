@@ -18,12 +18,11 @@ export default function Home() {
       transition={{ duration: 0.4, delay: 0.2 }}
     >
       <div className="flex flex-wrap gap-2">
-        <h1 className="md:text-4xl text-2xl font-semibold wrap-txt mt-7">Hi, I'm</h1>
+        <h1 className="md:text-4xl text-2xl font-semibold wrap-txt mt-7">
+          Hi, I'm
+        </h1>
         <RotatingText
-          texts={[
-            "Muhammad Haikal",
-            "IT Enthusiast",
-          ]}
+          texts={["Muhammad Haikal", "IT Enthusiast"]}
           mainClassName="md:text-4xl text-2xl font-semibold wrap-txt mt-7"
           staggerFrom={"last"}
           initial={{ y: "100%" }}
@@ -38,16 +37,20 @@ export default function Home() {
 
       <div>
         <ul className={`ml-5 flex flex-wrap gap-5 sm:gap-10 mt-3 text-md`}>
-          <li className="list-disc text-sm md:text-[16px]">Based In Bandung, Indonesia</li>
+          <li className="list-disc text-sm md:text-[16px]">
+            Based In Bandung, Indonesia
+          </li>
           <li className="list-disc text-sm md:text-[16px]">Student</li>
         </ul>
       </div>
 
       <div>
         <p className="mt-5 text-md md:text-[15px] leading-7">
-          IT enthusiast with strong interests in Data Analytics, Data Science, Machine Learning, and Full-Stack Development. 
-          Experienced in building data-driven and web-based applications. Passionate about solving real-world problems
-          with technology while continuously learning and exploring new innovations.
+          IT enthusiast with strong interests in Data Analytics, Data Science,
+          Machine Learning, and Full-Stack Development. Experienced in building
+          data-driven and web-based applications. Passionate about solving
+          real-world problems with technology while continuously learning and
+          exploring new innovations.
         </p>
 
         <hr className="mt-8 text-gray-400" />
@@ -72,7 +75,7 @@ export default function Home() {
 
       <div className="space-y-4 overflow-hidden mt-5">
         {/* Atas - scroll ke kanan */}
-         <div className="relative w-full overflow-hidden">
+        <div className="relative w-full overflow-hidden">
           <div className="flex animate-marquee-right whitespace-nowrap w-fit">
             {[...icon, ...icon].map((tech, index) => (
               <div
@@ -110,8 +113,9 @@ export default function Home() {
         </div>
         <div className="mt-5">
           <span className="leading-7 text-md md:text-[15px] ">
-            Technology Enthusiast Interested in web development, data analytics, and machine learning 
-            with a lot of hands-on experience and problem solving.
+            Technology Enthusiast Interested in web development, data analytics,
+            and machine learning with a lot of hands-on experience and problem
+            solving.
           </span>
         </div>
 

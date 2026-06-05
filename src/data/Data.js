@@ -168,6 +168,7 @@ import sklearn from "../assets/skill/sklearn.svg";
 import matplotlib from "../assets/skill/matplotlib.svg";
 import mysql from "../assets/skill/mysql.svg";
 import mongo from "../assets/skill/mongo.svg";
+import powerbi from "../assets/skill/powerbi.png";
 
 import londri from '../assets/datadata/londri.png'
 import churn from '../assets/datadata/churn.png'
@@ -175,6 +176,8 @@ import kmeans from '../assets/datadata/kmeans.png'
 import ensemble from '../assets/datadata/ensemble.png'
 import fraud from '../assets/datadata/fraud.png'
 import saham from '../assets/datadata/saham.png'
+import hrattrition from '../assets/datadata/hr.png'
+
 
 export const project = [
 
@@ -388,110 +391,67 @@ export const project = [
     },    
   },
   {
-    id: "11",
-    nama: "Student Lifestyle & Academic Performance Clustering",
-    desc: "Applied K-Means clustering to segment students based on lifestyle habits and academic performance in order to identify behavioral patterns influencing educational outcomes.",
-    techStack: [python, sklearn, pandas, numpy, matplotlib],
-    img: kmeans,
-    intro:
-    "This project explores how student lifestyle factors such as study habits, sleep duration, stress levels, attendance, and screen time relate to academic performance using unsupervised machine learning techniques.",
-    porto:
-    "The project combines exploratory data analysis, feature preprocessing, dimensionality reduction, and K-Means clustering to identify meaningful student behavior profiles and performance patterns.",
-    category: "Data",
+  id: "17",
+  nama: "HR Attrition Analytics Dashboard",
+  desc: "Interactive data visualization project analyzing employee attrition behavior in the HR domain using Power BI to identify retention risks, workforce patterns, and business insights.",
+  techStack: [powerbi],
+  img: hrattrition,
+  intro:
+    "This project explores employee attrition patterns using IBM HR Analytics dataset containing demographic, financial, and job-related data. The analysis focuses on understanding factors influencing attrition behavior such as overtime, job roles, age groups, monthly income, and department distribution through an interactive Power BI dashboard.",
+  porto:
+    "The project includes exploratory analysis and dashboard visualization to uncover employee retention risks and provide actionable business insights for improving workforce retention strategies.",
+  category: "Data",
 
-    caseStudy: {
-      problem:
-      "Students demonstrate diverse academic behaviors and lifestyle patterns that can influence learning outcomes. Without systematic segmentation, it becomes difficult to understand student characteristics and identify groups requiring targeted educational support.",
-
-      dataset: {
-        source: "Kaggle - Student Lifestyle & Performance Dataset",
-        rows: 1000,
-        features: 11,
-        target: "Cluster Segmentation (Unsupervised Learning)",
-      },
-
-      methodology: [
-        {
-          step: "Exploratory Data Analysis",
-          desc: "Analyzed numerical feature distributions, academic performance trends, and behavioral patterns across multiple student attributes.",
-        },
-        {
-          step: "Feature Selection",
-          desc: "Selected key variables including study hours, sleep duration, attendance percentage, stress level, screen time, and CGPA.",
-        },
-        {
-          step: "Data Preprocessing",
-          desc: "Applied StandardScaler normalization to ensure balanced Euclidean distance calculations during clustering.",
-        },
-        {
-          step: "Optimal Cluster Selection",
-          desc: "Used Elbow Method and Silhouette Score evaluation to determine the most suitable number of clusters.",
-        },
-        {
-          step: "K-Means Clustering",
-          desc: "Trained K-Means clustering model and assigned cluster labels to each student profile.",
-        },
-        {
-          step: "Cluster Interpretation",
-          desc: "Performed cluster profiling using feature averages, PCA visualization, and academic behavior comparisons.",
-        },
-      ],
-
-      visualizations: [
-        {
-          title: 'Silhouette Score per K',
-          type: 'line',
-          data: {
-            labels: ['K=2', 'K=3', 'K=4', 'K=5', 'K=6', 'K=7', 'K=8', 'K=9'],
-            values: [0.2385, 0.21, 0.19, 0.18, 0.17, 0.16, 0.15, 0.14],
-          },
-          yLabel: 'Silhouette Score',
-        },
-        {
-          title: 'Average CGPA per Cluster',
-          type: 'bar',
-          data: {
-            labels: ['Cluster 1 High Performer', 'Cluster 2 High Stress', 'Cluster 3 Low Effort'],
-            values: [6.72, 6.89, 8.27],   // → update sesuai df.groupby('cluster')['CGPA'].mean()
-          },
-          yLabel: 'Average CGPA',
-        },
-        {
-          title: 'Average Stress Level per Cluster',
-          type: 'bar',
-          data: {
-            labels: ['Cluster 1 High Performer', 'Cluster 2 High Stress', 'Cluster 3 Low Effort'],
-            values: [3.17, 6.47, 4.10],   // update sesuai df.groupby('cluster')['Stress_Level_1_to_10'].mean()
-          },
-          yLabel: 'Average Stress Level (1–10)',
-        },
-        {
-          title: 'Average Study Hours per Cluster',
-          type: 'radar',
-          data: {
-            labels: ['Study Hours', 'Sleep Hours', 'Attendance %', 'Internal Marks', 'CGPA'],
-            values: [2.53, 6.47, 71.68, 59.48, 6.72],   //  update dari groupby mean Cluster 1
-          },
-        },
-      ],
-
-      screenshots: [
-
-      ],
-
-      insights: [
-        "K-Means clustering (k=3) segmented 1,000 students into three distinct profiles based on study habits, sleep, stress, screen time, attendance, and GPA.",
-        "Cluster 2 'Efficient Performers': nearly identical study hours to Cluster 1 (~4.78 hrs/day) but significantly lower stress (4.11 vs 6.48) and higher CGPA (8.28 vs 6.90) quality of study matters more than quantity.",
-        "Cluster 1 'Struggling Hard Workers': the highest stress group (6.48/10) with moderate study hours and attendance (84%), yet only achieved middle-tier CGPA (6.90) high stress appears to hinder academic output.",
-        "Cluster 0 'Disengaged Students': lowest study hours (2.53/day), lowest attendance (71.68%), lowest stress (3.18), and lowest CGPA (6.73) low stress here reflects disengagement, not balance.",
-        "The key differentiator between Cluster 1 and Cluster 2 is not study hours but stress level suggesting stress management is a stronger predictor of academic success than time spent studying.",
-        "Attendance emerged as a clear separator: Cluster 0's low attendance (71.68%) correlates directly with poor academic outcomes, while Clusters 1 and 2 share similar attendance (~84%) yet differ vastly in performance.",
-      ],
-
-      notebookUrl: "",
-      githubUrl: "",
-
+  caseStudy: {
+    problem:
+      "Employee attrition is one of the major challenges in human resource management because losing key talent can significantly impact productivity and long-term business growth. Although companies collect large volumes of employee data, identifying attrition patterns and understanding the factors behind employee turnover remain difficult without proper analysis and visualization.",
+    dataset: {
+      source: "Kaggle - IBM HR Analytics Employee Attrition Dataset",
+      rows: 1470,
+      features: 35,
+      target: "Employee Attrition Analysis",
     },
+
+    methodology: [
+      {
+        step: "Data Collection",
+        desc: "Collected IBM HR Analytics dataset containing demographic, financial, and behavioral employee information from Kaggle.",
+      },
+      {
+        step: "Data Preparation",
+        desc: "Cleaned and transformed the dataset in Power Query by removing redundant columns (EmployeeCount, Over18, StandardHours) and creating calculated columns such as Age Group for segmentation analysis.",
+      },
+      {
+        step: "DAX Measures Development",
+        desc: "Built custom DAX measures including Attrition Rate, Total Employees, Avg Monthly Income, Avg Job Satisfaction, and Attrition Count to power dynamic KPI cards and visualizations.",
+      },
+      {
+        step: "Dashboard Visualization",
+        desc: "Developed an interactive Power BI dashboard to visualize attrition rates, department comparisons, age group trends, job role breakdowns, and employee distribution.",
+      },
+      {
+        step: "Business Insight Analysis",
+        desc: "Generated actionable insights to support HR retention strategies and improve employee satisfaction and engagement.",
+      },
+    ],
+
+    screenshots: [
+      { img: hrattrition, caption: "Overview Dashboard using Power BI" },
+    ],
+
+    insights: [
+      "The overall employee attrition rate reached 16.1% from a total of 1,470 employees, exceeding the ideal threshold of 10%.",
+      "Research & Development department recorded the highest attrition count (133 employees), followed by Sales (92 employees).",
+      "Laboratory Technician and Sales Executive are the job roles with the highest attrition numbers.",
+      "Employees aged 25–34 contribute the most to attrition, suggesting early-career disengagement as a key risk factor.",
+      "Employees working overtime showed approximately 2x higher attrition tendency compared to non-overtime employees.",
+      "The attrition rate of 16.1% significantly exceeds the 10% ideal benchmark, indicating a critical need for retention interventions.",
+      "HR retention programs should prioritize high-risk segments including young employees in R&D and Sales roles with frequent overtime.",
+    ],
+
+    notebookUrl: "", // → Opsional: link Power BI published report
+    githubUrl:   "", // → Opsional: link GitHub repository
+  },
   },
   {
     id: "10",
@@ -598,8 +558,113 @@ export const project = [
     },
   },
 
-  //  DATA ANALYST PROJECT
-  // Untuk DA: pakai screenshots dari Tableau.
+  {
+    id: "11",
+    nama: "Student Lifestyle & Academic Performance Clustering",
+    desc: "Applied K-Means clustering to segment students based on lifestyle habits and academic performance in order to identify behavioral patterns influencing educational outcomes.",
+    techStack: [python, sklearn, pandas, numpy, matplotlib],
+    img: kmeans,
+    intro:
+    "This project explores how student lifestyle factors such as study habits, sleep duration, stress levels, attendance, and screen time relate to academic performance using unsupervised machine learning techniques.",
+    porto:
+    "The project combines exploratory data analysis, feature preprocessing, dimensionality reduction, and K-Means clustering to identify meaningful student behavior profiles and performance patterns.",
+    category: "Data",
+
+    caseStudy: {
+      problem:
+      "Students demonstrate diverse academic behaviors and lifestyle patterns that can influence learning outcomes. Without systematic segmentation, it becomes difficult to understand student characteristics and identify groups requiring targeted educational support.",
+
+      dataset: {
+        source: "Kaggle - Student Lifestyle & Performance Dataset",
+        rows: 1000,
+        features: 11,
+        target: "Cluster Segmentation (Unsupervised Learning)",
+      },
+
+      methodology: [
+        {
+          step: "Exploratory Data Analysis",
+          desc: "Analyzed numerical feature distributions, academic performance trends, and behavioral patterns across multiple student attributes.",
+        },
+        {
+          step: "Feature Selection",
+          desc: "Selected key variables including study hours, sleep duration, attendance percentage, stress level, screen time, and CGPA.",
+        },
+        {
+          step: "Data Preprocessing",
+          desc: "Applied StandardScaler normalization to ensure balanced Euclidean distance calculations during clustering.",
+        },
+        {
+          step: "Optimal Cluster Selection",
+          desc: "Used Elbow Method and Silhouette Score evaluation to determine the most suitable number of clusters.",
+        },
+        {
+          step: "K-Means Clustering",
+          desc: "Trained K-Means clustering model and assigned cluster labels to each student profile.",
+        },
+        {
+          step: "Cluster Interpretation",
+          desc: "Performed cluster profiling using feature averages, PCA visualization, and academic behavior comparisons.",
+        },
+      ],
+
+      visualizations: [
+        {
+          title: 'Silhouette Score per K',
+          type: 'line',
+          data: {
+            labels: ['K=2', 'K=3', 'K=4', 'K=5', 'K=6', 'K=7', 'K=8', 'K=9'],
+            values: [0.2385, 0.21, 0.19, 0.18, 0.17, 0.16, 0.15, 0.14],
+          },
+          yLabel: 'Silhouette Score',
+        },
+        {
+          title: 'Average CGPA per Cluster',
+          type: 'bar',
+          data: {
+            labels: ['Cluster 1 High Performer', 'Cluster 2 High Stress', 'Cluster 3 Low Effort'],
+            values: [6.72, 6.89, 8.27],   // → update sesuai df.groupby('cluster')['CGPA'].mean()
+          },
+          yLabel: 'Average CGPA',
+        },
+        {
+          title: 'Average Stress Level per Cluster',
+          type: 'bar',
+          data: {
+            labels: ['Cluster 1 High Performer', 'Cluster 2 High Stress', 'Cluster 3 Low Effort'],
+            values: [3.17, 6.47, 4.10],   // update sesuai df.groupby('cluster')['Stress_Level_1_to_10'].mean()
+          },
+          yLabel: 'Average Stress Level (1–10)',
+        },
+        {
+          title: 'Average Study Hours per Cluster',
+          type: 'radar',
+          data: {
+            labels: ['Study Hours', 'Sleep Hours', 'Attendance %', 'Internal Marks', 'CGPA'],
+            values: [2.53, 6.47, 71.68, 59.48, 6.72],   //  update dari groupby mean Cluster 1
+          },
+        },
+      ],
+
+      screenshots: [
+
+      ],
+
+      insights: [
+        "K-Means clustering (k=3) segmented 1,000 students into three distinct profiles based on study habits, sleep, stress, screen time, attendance, and GPA.",
+        "Cluster 2 'Efficient Performers': nearly identical study hours to Cluster 1 (~4.78 hrs/day) but significantly lower stress (4.11 vs 6.48) and higher CGPA (8.28 vs 6.90) quality of study matters more than quantity.",
+        "Cluster 1 'Struggling Hard Workers': the highest stress group (6.48/10) with moderate study hours and attendance (84%), yet only achieved middle-tier CGPA (6.90) high stress appears to hinder academic output.",
+        "Cluster 0 'Disengaged Students': lowest study hours (2.53/day), lowest attendance (71.68%), lowest stress (3.18), and lowest CGPA (6.73) low stress here reflects disengagement, not balance.",
+        "The key differentiator between Cluster 1 and Cluster 2 is not study hours but stress level suggesting stress management is a stronger predictor of academic success than time spent studying.",
+        "Attendance emerged as a clear separator: Cluster 0's low attendance (71.68%) correlates directly with poor academic outcomes, while Clusters 1 and 2 share similar attendance (~84%) yet differ vastly in performance.",
+      ],
+
+      notebookUrl: "",
+      githubUrl: "",
+
+    },
+  },
+
 
   {
     id: "12",

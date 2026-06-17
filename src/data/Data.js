@@ -149,6 +149,8 @@ import p5 from "../assets/projek/p5.png";
 import p6 from "../assets/projek/p6.png";
 import p7 from "../assets/projek/p7.png";
 import p8 from "../assets/projek/p8.png";
+import p9 from "../assets/projek/p9.png";
+import p10 from "../assets/projek/p10.png";
 
 import tml from "../assets/skill/html5-color.svg";
 import css from "../assets/skill/css-color.svg";
@@ -160,6 +162,8 @@ import vite from "../assets/skill/vite-color.svg";
 import tailwind from "../assets/skill/tailwindcss-color.svg";
 import framer from "../assets/skill/framer-color.svg";
 import next from "../assets/skill/nextjs.svg";
+import ts from "../assets/skill/ts.svg";
+import lara from "../assets/skill/lara.svg";
 import python from "../assets/skill/python.svg";
 import tableau from "../assets/skill/tableau.png";
 import numpy from "../assets/skill/numpy.svg";
@@ -862,7 +866,7 @@ export const project = [
 
     },
   },
-    {
+  {
     id: "1",
     nama: "muhammadhaikal.vercel.app",
     desc: "Personal website & portfolio, built from scratch using Javascript, TailwindCSS, React, Vite, Framer motion and React Router.",
@@ -872,6 +876,32 @@ export const project = [
       "This is a personal website to showcase my projects and my skill development.",
     porto: "To showcasing my awesome projects. You can see this feature",
     demo: "https://muhammadhaikal.vercel.app/",
+    category: "Web Dev",
+  },
+  {
+    id: "24",
+    nama: "Genting: Generasi Anti Stunting",
+    desc: "Health-tech platform for stunting prevention featuring real-time doctor consultation, AI health assistant, and AI-powered food scanner, built with Next.js, Supabase, TypeScript, and TailwindCSS.",
+    techStack: [next, ts, tailwind],
+    img: p9,
+    intro:
+      "Genting (Generasi Anti Stunting) is a digital health platform designed to help communities understand, prevent, and address stunting through education, doctor consultation, and AI-powered tools.",
+    porto:
+      "This platform combines health education and a stunting prevention roadmap, real-time consultation with verified doctors, AI-based health consultation, and an AI food scanner that analyzes the nutritional content of meals — all integrated with a secure payment gateway for premium services.",
+    demo: "https://genting-apps.vercel.app/",
+    category: "Web Dev",
+  },
+  {
+    id: "25",
+    nama: "SIGMA: Sistem Informasi Geografis Makan Bergizi Gratis",
+    desc: "A reporting and monitoring platform for the Makan Bergizi Gratis (MBG) program, featuring an AI-powered map that clusters schools by location to recommend optimal SPPG (food service unit) placement. Built with Next.js and TypeScript.",
+    techStack: [next, ts, tailwind],
+    img: p10,
+    intro:
+      "MBG is a web platform built to support the Makan Bergizi Gratis program by providing a reporting system for monitoring program implementation, alongside an AI-driven recommendation feature for SPPG placement.",
+    porto:
+      "As the full-stack developer, I built this platform using Next.js and TypeScript - covering the reporting system, database, and an AI-powered map feature that clusters schools based on their geographic location. By grouping schools into clusters, the system helps identify the most strategic locations to place SPPG (Satuan Pelayanan Pemenuhan Gizi) units, ensuring food distribution coverage is more efficient and reaches schools that are geographically closer to each service point.",
+    demo: "",
     category: "Web Dev",
   },
   {
@@ -938,12 +968,14 @@ export const project = [
   },
   {
     id: "8",
-    nama: "siaga manado",
-    desc: "A disaster reporting web app for Manado. Built with a team for a university project, featuring reporting, education, and user authentication.",
-    techStack: [js, tailwind, tml],
+    nama: "Siaga Manado",
+    desc: "A disaster reporting and early-warning web app for Manado city, featuring role-based dashboards (User, Admin, BPBD), an AI-powered disaster map using K-Means clustering, and a full reporting & education system. Built as a university group project using Laravel.",
+    techStack: [lara, tailwind, mysql],
     img: p1,
-    intro: "",
-    porto: "",
+    intro:
+      "Siaga Manado is a disaster management platform built to help the Manado community report disasters in real-time, access disaster preparedness education, and enable local authorities (BPBD) to monitor and respond to incidents more effectively.",
+    porto:
+      "As the full-stack developer on this university team project, I built the entire system using Laravel — from the database structure and authentication system to the three-role dashboard (User, Admin, and BPBD) and the AI-powered disaster map. The map feature applies K-Means clustering to group reported disaster locations, helping authorities quickly identify disaster-prone zones and prioritize response areas across the city.",
     demo: "",
     category: "Web Dev",
   },
@@ -1035,5 +1067,10 @@ export const icon = [
     id: "17",
     nama: "MongoDB",
     icon: mongo,
+  },
+  {
+    id: "18",
+    nama: "TypeScript",
+    icon: ts,
   },
 ];

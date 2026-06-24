@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://muhammadhaikal.vercel.app/sitemap.xml

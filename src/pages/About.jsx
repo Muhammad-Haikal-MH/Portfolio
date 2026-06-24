@@ -1,8 +1,12 @@
 import React from "react";
 import telyu from "../assets/logo-telyu.png";
 import sma from "../assets/sma5.png";
+import alpro from "../assets/asprak/alpro.jpeg";
+import webpro from "../assets/asprak/webpro.jpeg";
+import ux from "../assets/asprak/ux.jpeg";
 import { motion } from "framer-motion";
 import { RiGraduationCapLine } from "react-icons/ri";
+import { RiBriefcaseLine } from "react-icons/ri";
 
 export default function About() {
   return (
@@ -87,6 +91,81 @@ export default function About() {
               <p>Social Sciences and Humanities</p>
               <p className="mt-2">2021 - 2024</p>
               <p className="mt-2">Jambi, Indonesia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ====== EXPERIENCE ====== */}
+      <div className="flex gap-3 mt-10">
+        <RiBriefcaseLine size={30} />
+        <span className="text-xl font-semibold">Experience</span>
+      </div>
+
+      {/* Teaching Assistant 1 — Coordinator */}
+      <div className="border border-neutral-300 rounded-xl p-1 mt-7">
+        <div className="bg-gradient-to-b from-neutral-200 to-neutral-100 p-5 rounded-xl dark:from-[#242424] dark:to-neutral-900 dark:hover:to-neutral-950 flex items-start gap-6">
+          <div className="flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden">
+            <img src={alpro} alt="Coordinator Teaching Assistant" className="w-full h-full object-cover" />
+          </div>
+          <div className="mt-1">
+            <span className="text-lg font-medium">Coordinator Teaching Assistant</span>
+            <div className="my-2 text-neutral-600 dark:text-neutral-400 text-sm space-y-1">
+              <p className="font-medium text-blue-600 dark:text-blue-400">Programming Algorithms</p>
+              <p>Telkom University</p>
+              <p>September 2025 – January 2026</p>
+              <p className="mt-2 leading-relaxed">
+                Led and coordinated a team of teaching assistants for the Programming Algorithms course,
+                supporting 30+ undergraduate students in understanding foundational algorithm concepts,
+                pseudocode design, and structured problem-solving. Responsible for scheduling lab sessions,
+                reviewing student assignments, and ensuring consistent quality of academic assistance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Teaching Assistant 2 — Web Programming */}
+      <div className="border border-neutral-300 rounded-xl p-1 mt-5">
+        <div className="bg-gradient-to-b from-neutral-200 to-neutral-100 p-5 rounded-xl dark:from-[#242424] dark:to-neutral-900 dark:hover:to-neutral-950 flex items-start gap-6">
+          <div className="flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden">
+            <img src={webpro} alt="Teaching Assistant Web Programming" className="w-full h-full object-cover" />
+          </div>
+          <div className="mt-1">
+            <span className="text-lg font-medium">Teaching Assistant</span>
+            <div className="my-2 text-neutral-600 dark:text-neutral-400 text-sm space-y-1">
+              <p className="font-medium text-purple-600 dark:text-purple-400">Web Programming</p>
+              <p>Telkom University</p>
+              <p>February 2026 – June 2026</p>
+              <p className="mt-2 leading-relaxed">
+                Assisted 30+ students in grasping modern web development concepts including HTML, CSS,
+                JavaScript, and server-side fundamentals. Guided hands-on lab sessions, provided
+                constructive feedback on student projects, and helped troubleshoot technical issues
+                to ensure every student progressed confidently throughout the semester.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Teaching Assistant 3 — User Experience */}
+      <div className="border border-neutral-300 rounded-xl p-1 mt-5 mb-7">
+        <div className="bg-gradient-to-b from-neutral-200 to-neutral-100 p-5 rounded-xl dark:from-[#242424] dark:to-neutral-900 dark:hover:to-neutral-950 flex items-start gap-6">
+          <div className="flex-shrink-0 w-20 h-20 rounded-xl overflow-hidden">
+            <img src={ux} alt="Teaching Assistant User Experience" className="w-full h-full object-cover" />
+          </div>
+          <div className="mt-1">
+            <span className="text-lg font-medium">Teaching Assistant</span>
+            <div className="my-2 text-neutral-600 dark:text-neutral-400 text-sm space-y-1">
+              <p className="font-medium text-emerald-600 dark:text-emerald-400">User Experience</p>
+              <p>Telkom University</p>
+              <p>February 2026 – June 2026</p>
+              <p className="mt-2 leading-relaxed">
+                Mentored 30+ students in UX design principles, covering user research methodologies,
+                wireframing, prototyping, and usability testing. Facilitated practical design workshops
+                and critique sessions using tools such as Figma, helping students translate theoretical
+                UX concepts into well-structured, user-centered digital products.
+              </p>
             </div>
           </div>
         </div>

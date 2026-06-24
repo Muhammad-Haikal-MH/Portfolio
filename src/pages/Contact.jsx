@@ -70,55 +70,6 @@ export default function Contact() {
           icon={<BsGithub className="w-10 h-10 text-white" />}
         />
       </div>
-      <hr className="my-7" />
-
-      {/* <form>
-        <div className='grid md:grid-cols-2 gap-5'>
-          <input type="text" placeholder='Name' className='border rounded-lg px-2 py-2'/>
-          <input type="email" placeholder='Email' className='border rounded-lg px-2 py-2'/>
-
-        </div>
-        <div>
-          <textarea placeholder='Message'></textarea>
-        </div>
-      </form> */}
-
-      <form class="space-y-4 transition-all duration-300 ">
-        <div class="flex w-full flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-          <div class="w-full space-y-2">
-            <input
-              placeholder="Name"
-              class="placeholder:text-gray-500 dark:placeholder:text-gray-400 w-full rounded-lg bg-neutral-50 p-2 outline-2 transition-all duration-300 outline-neutral-300 focus:outline-neutral-400 dark:bg-neutral-900 dark:outline-neutral-700"
-              type="text"
-              name="name"
-            />
-          </div>
-          <div class="w-full space-y-2">
-            <input
-              placeholder="Email"
-              class="placeholder:text-gray-500 dark:placeholder:text-gray-400 w-full rounded-lg bg-neutral-50 p-2 outline-2 transition-all duration-300 outline-neutral-300 focus:outline-neutral-400 dark:bg-neutral-900 dark:outline-neutral-700"
-              type="text"
-              name="email"
-            />
-          </div>
-        </div>
-
-        <div class="w-full space-y-2">
-          <textarea
-            rows="2"
-            placeholder="Message"
-            name="message"
-            class="placeholder:text-gray-500 dark:placeholder:text-gray-400 w-full rounded-lg bg-neutral-50 p-2 outline-2 transition-all duration-300 outline-neutral-300 focus:outline-neutral-400 dark:bg-neutral-900 dark:outline-neutral-700"
-          ></textarea>
-        </div>
-
-        <button
-          type="submit"
-          class="w-full rounded-lg bg-neutral-600 px-4 py-2 text-neutral-50 shadow-md transition-all duration-300 hover:bg-neutral-700 hover:shadow-lg dark:bg-neutral-800 hover:dark:bg-neutral-700"
-        >
-          Send Email
-        </button>
-      </form>
     </motion.div>
   );
 }

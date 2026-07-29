@@ -15,15 +15,15 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Muhammad Haikal | Portfolio — Data Analyst & Web Developer</title>
+        <title>Muhammad Haikal | Portfolio — Data Analyst, Data Scientist & AI Engineer</title>
         <meta
           name="description"
-          content="Portfolio Muhammad Haikal — mahasiswa Smart City Information Systems Telkom University. Spesialis Data Analyst, Data Science, Machine Learning, dan Web Development menggunakan Python, Tableau, Power BI, React, dan SQL."
+          content="Portfolio Muhammad Haikal — mahasiswa Smart City Information Systems Telkom University. Spesialis Data Analyst, Data Science, Machine Learning, AI Engineer, dan Fullstack Developer menggunakan Python, Tableau, Power BI, SQL, dan React."
         />
         <link rel="canonical" href="https://muhammadhaikal.vercel.app/" />
         <meta property="og:url" content="https://muhammadhaikal.vercel.app/" />
-        <meta property="og:title" content="Muhammad Haikal | Portfolio — Data Analyst & Web Developer" />
-        <meta property="og:description" content="Portfolio Muhammad Haikal — mahasiswa Smart City Information Systems Telkom University. Spesialis Data Analyst, Data Science, Machine Learning, dan Web Development." />
+        <meta property="og:title" content="Muhammad Haikal | Portfolio — Data Analyst, Data Scientist & AI Engineer" />
+        <meta property="og:description" content="Portfolio Muhammad Haikal — mahasiswa Smart City Information Systems Telkom University. Spesialis Data Analyst, Data Science, Machine Learning, dan AI Engineering." />
       </Helmet>
 
       <motion.div

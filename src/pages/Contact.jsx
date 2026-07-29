@@ -3,15 +3,28 @@ import { MdOutlineMail } from "react-icons/md";
 import { BsGithub, BsInstagram, BsTiktok } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 
 export default function Contact() {
   return (
-    <motion.div
-      initial={{ x: 100, opacity: 0 }}
-      animate={{ x: 0, opacity: 1, scale: 1 }}
-      transition={{ duration: 0.4, delay: 0.2 }}
-      className="min-h-screen  p-6 md:p-8"
-    >
+    <>
+      <Helmet>
+        <title>Hubungi Muhammad Haikal — Data Analyst & Web Developer</title>
+        <meta
+          name="description"
+          content="Hubungi Muhammad Haikal untuk kolaborasi, freelance, atau sekadar berdiskusi. Tersedia via Email, LinkedIn, GitHub, Instagram, dan TikTok."
+        />
+        <link rel="canonical" href="https://muhammadhaikal.vercel.app/contact" />
+        <meta property="og:url" content="https://muhammadhaikal.vercel.app/contact" />
+        <meta property="og:title" content="Hubungi Muhammad Haikal — Data Analyst & Web Developer" />
+      </Helmet>
+
+      <motion.div
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 0.4, delay: 0.2 }}
+        className="min-h-screen  p-6 md:p-8"
+      >
       <h1 className="text-2xl font-semibold mb-6">Contact</h1>
       <p className="text-gray-600 dark:text-gray-400 text-[17px] my-5">
         Let`s get in touch
@@ -70,6 +83,7 @@ export default function Contact() {
           icon={<BsGithub className="w-10 h-10 text-white" />}
         />
       </div>
-    </motion.div>
+      </motion.div>
+    </>
   );
 }

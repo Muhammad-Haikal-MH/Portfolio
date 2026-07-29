@@ -1,14 +1,27 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Data } from "../data/Data";
 import { motion } from "framer-motion";
 
 export default function Achievement() {
   return (
-    <motion.div
-      initial={{ x: 100, opacity: 0 }}
-      animate={{ x: 0, opacity: 1, scale: 1 }}
-      transition={{ duration: 0.4, delay: 0.2 }}
-    >
+    <>
+      <Helmet>
+        <title>Achievements & Certificates — Muhammad Haikal | Telkom University</title>
+        <meta
+          name="description"
+          content="Koleksi sertifikat dan penghargaan Muhammad Haikal dari berbagai kompetisi, kursus, dan program sertifikasi di bidang Data Science, Machine Learning, dan Web Development."
+        />
+        <link rel="canonical" href="https://muhammadhaikal.vercel.app/achievement" />
+        <meta property="og:url" content="https://muhammadhaikal.vercel.app/achievement" />
+        <meta property="og:title" content="Achievements & Certificates — Muhammad Haikal" />
+      </Helmet>
+
+      <motion.div
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 0.4, delay: 0.2 }}
+      >
       <h1 className="text-2xl font-semibold mt-7">Achievement</h1>
       <p className="mt-3 mb-6 text-md">
         A collection of certificates and badges that I have earned throughout my
@@ -47,6 +60,7 @@ export default function Achievement() {
           ))}
         </div>
       </div>
-    </motion.div>
+      </motion.div>
+    </>
   );
 }

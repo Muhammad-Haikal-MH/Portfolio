@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router";
 import { project } from "../data/Data";
@@ -15,11 +16,23 @@ export default function Project() {
   const tabs = ["All", "Web Dev", "Data"];
 
   return (
-    <motion.div
-      initial={{ x: 100, opacity: 0 }}
-      animate={{ x: 0, opacity: 1, scale: 1 }}
-      transition={{ duration: 0.4, delay: 0.2 }}
-    >
+    <>
+      <Helmet>
+        <title>Projects Muhammad Haikal — Data Science & Web Development Portfolio</title>
+        <meta
+          name="description"
+          content="Kumpulan proyek Muhammad Haikal di bidang Data Science, Machine Learning, dan Web Development. Lihat portofolio proyek Python, React, Tableau, dan SQL."
+        />
+        <link rel="canonical" href="https://muhammadhaikal.vercel.app/project" />
+        <meta property="og:url" content="https://muhammadhaikal.vercel.app/project" />
+        <meta property="og:title" content="Projects Muhammad Haikal — Data Science & Web Development Portfolio" />
+      </Helmet>
+
+      <motion.div
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 0.4, delay: 0.2 }}
+      >
       <h1 className="text-2xl font-semibold mt-7">Projects</h1>
       <p className="mt-3 mb-6 text-md">
         Several projects that I have worked on, both private and open source.
@@ -81,6 +94,7 @@ export default function Project() {
           ))}
         </div>
       </div>
-    </motion.div>
+      </motion.div>
+    </>
   );
 }

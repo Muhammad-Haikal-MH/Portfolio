@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import telyu from "../assets/logo-telyu.png";
 import sma from "../assets/sma5.png";
 import alpro from "../assets/asprak/alpro.jpeg";
@@ -10,11 +11,23 @@ import { RiBriefcaseLine } from "react-icons/ri";
 
 export default function About() {
   return (
-    <motion.div
-      initial={{ x: 100, opacity: 0 }}
-      animate={{ x: 0, opacity: 1, scale: 1 }}
-      transition={{ duration: 0.4, delay: 0.2 }}
-    >
+    <>
+      <Helmet>
+        <title>Tentang Muhammad Haikal — Smart City Student Telkom University</title>
+        <meta
+          name="description"
+          content="Kenali Muhammad Haikal — mahasiswa Smart City Information Systems Telkom University, Teaching Assistant, dan enthusiast di bidang Data Science, Machine Learning, dan Web Development."
+        />
+        <link rel="canonical" href="https://muhammadhaikal.vercel.app/about" />
+        <meta property="og:url" content="https://muhammadhaikal.vercel.app/about" />
+        <meta property="og:title" content="Tentang Muhammad Haikal — Smart City Student Telkom University" />
+      </Helmet>
+
+      <motion.div
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 0.4, delay: 0.2 }}
+      >
       <h1 className="text-2xl font-semibold mt-7">About</h1>
       <p className="mt-3 mb-6">A short story of me</p>
       <hr className="w-full border-1 border-dashed"></hr>
@@ -171,5 +184,6 @@ export default function About() {
         </div>
       </div>
     </motion.div>
+    </>
   );
 }

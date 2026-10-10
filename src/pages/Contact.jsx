@@ -9,80 +9,92 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Hubungi Muhammad Haikal — Data Analyst & Web Developer</title>
+        <title>Contact Muhammad Haikal — AI Engineer & Data Scientist</title>
         <meta
           name="description"
-          content="Hubungi Muhammad Haikal untuk kolaborasi, freelance, atau sekadar berdiskusi. Tersedia via Email, LinkedIn, GitHub, Instagram, dan TikTok."
+          content="Get in touch with Muhammad Haikal for collaborations, freelance opportunities, or just to connect. Available via Email, LinkedIn, GitHub, Instagram, and TikTok."
         />
         <link rel="canonical" href="https://muhammadhaikal.vercel.app/contact" />
         <meta property="og:url" content="https://muhammadhaikal.vercel.app/contact" />
-        <meta property="og:title" content="Hubungi Muhammad Haikal — Data Analyst & Web Developer" />
+        <meta property="og:title" content="Contact Muhammad Haikal — AI Engineer & Data Scientist" />
       </Helmet>
 
       <motion.div
-        initial={{ x: 100, opacity: 0 }}
-        animate={{ x: 0, opacity: 1, scale: 1 }}
-        transition={{ duration: 0.4, delay: 0.2 }}
-        className="min-h-screen  p-6 md:p-8"
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.4 }}
+        className="pb-16"
       >
-      <h1 className="text-2xl font-semibold mb-6">Contact</h1>
-      <p className="text-gray-600 dark:text-gray-400 text-[17px] my-5">
-        Let`s get in touch
-      </p>
-      <hr className="w-full border-1 border-dashed mb-10"></hr>
-      <p className="mb-5 text-[18px] font-semibold">Find me on</p>
+        {/* Header — unified with other pages */}
+        <div className="pt-2">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span className="text-xs uppercase tracking-widest font-semibold text-emerald-600 dark:text-emerald-400">
+              Get In Touch
+            </span>
+          </div>
+          <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-neutral-900 dark:text-neutral-50">
+            Contact
+          </h1>
+          <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+            Let's connect and build something great together
+          </p>
+          <hr className="w-full border-t border-neutral-200 dark:border-neutral-800 my-6" />
+        </div>
 
-      {/* Gmail Card */}
-      <Card
-        title="Stay in Touch"
-        description="Reach out via email for any inquiries or collaborations."
-        buttonText="Go to Gmail"
-        buttonLink="mailto:h0325168@gmail.com"
-        bgClass="bg-gradient-to-br from-red-700 to-red-600 mb-5"
-        icon={<MdOutlineMail className="w-10 h-10 text-white" />}
-      />
+        <p className="mb-5 text-base font-semibold">Find me on</p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Instagram Card */}
+        {/* Gmail Card */}
         <Card
-          title="Follow My Journey"
-          description="Stay updated with my latest posts and stories on Instagram."
-          buttonText="Go to Instagram"
-          buttonLink="https://www.instagram.com/muhammad.haikal_07?igsh=N3VhZWE2YXF0YjNo"
-          bgClass="bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400"
-          icon={<BsInstagram className="w-10 h-10 text-white" />}
+          title="Stay in Touch"
+          description="Reach out via email for any inquiries or collaborations."
+          buttonText="Go to Gmail"
+          buttonLink="mailto:h0325168@gmail.com"
+          bgClass="bg-gradient-to-br from-red-700 to-red-600 mb-5"
+          icon={<MdOutlineMail className="w-10 h-10 text-white" />}
         />
 
-        {/* LinkedIn Card */}
-        <Card
-          title="Let's Connect"
-          description="Connect for collaboration or explore my professional experience."
-          buttonText="Go to Linkedin"
-          buttonLink="https://www.linkedin.com/in/muhammad-haikal-433681219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
-          bgClass="bg-gradient-to-br from-blue-800 to-blue-600"
-          icon={<BsLinkedin className="w-10 h-10 text-white" />}
-        />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+          {/* Instagram Card */}
+          <Card
+            title="Follow My Journey"
+            description="Stay updated with my latest posts and stories on Instagram."
+            buttonText="Go to Instagram"
+            buttonLink="https://www.instagram.com/muhammad.haikal_07?igsh=N3VhZWE2YXF0YjNo"
+            bgClass="bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400"
+            icon={<BsInstagram className="w-10 h-10 text-white" />}
+          />
 
-        {/* TikTok Card */}
-        <Card
-          title="Join the Fun"
-          description="Follow me on TikTok for entertaining and engaging content."
-          buttonText="Go to Tiktok"
-          buttonLink="https://www.tiktok.com/@taikucink00?_t=ZS-8wSqM91yUrt&_r=1"
-          bgClass="bg-gradient-to-br from-gray-700 to-gray-900"
-          icon={<BsTiktok className="w-10 h-10 text-white" />}
-        />
+          {/* LinkedIn Card */}
+          <Card
+            title="Let's Connect"
+            description="Connect for collaboration or explore my professional experience."
+            buttonText="Go to Linkedin"
+            buttonLink="https://www.linkedin.com/in/muhammad-haikal-433681219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            bgClass="bg-gradient-to-br from-blue-800 to-blue-600"
+            icon={<BsLinkedin className="w-10 h-10 text-white" />}
+          />
 
-        {/* GitHub Card */}
-        <Card
-          title="Explore the Code"
-          description="Explore the source code for all my projects on GitHub."
-          buttonText="Go to Github"
-          buttonLink="https://github.com/Muhammad-Haikal-MH"
-          bgClass="bg-gradient-to-br from-gray-900 to-blue-900"
-          icon={<BsGithub className="w-10 h-10 text-white" />}
-        />
-      </div>
+          {/* TikTok Card */}
+          <Card
+            title="Join the Fun"
+            description="Follow me on TikTok for entertaining and engaging content."
+            buttonText="Go to Tiktok"
+            buttonLink="https://www.tiktok.com/@taikucink00?_t=ZS-8wSqM91yUrt&_r=1"
+            bgClass="bg-gradient-to-br from-gray-700 to-gray-900"
+            icon={<BsTiktok className="w-10 h-10 text-white" />}
+          />
+
+          {/* GitHub Card */}
+          <Card
+            title="Explore the Code"
+            description="Explore the source code for all my projects on GitHub."
+            buttonText="Go to Github"
+            buttonLink="https://github.com/Muhammad-Haikal-MH"
+            bgClass="bg-gradient-to-br from-gray-900 to-blue-900"
+            icon={<BsGithub className="w-10 h-10 text-white" />}
+          />
+        </div>
       </motion.div>
     </>
   );

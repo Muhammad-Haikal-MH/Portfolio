@@ -14,153 +14,148 @@ import g13 from "../assets/sertif/g13.png";
 import g14 from "../assets/sertif/g14.jpeg";
 import g15 from "../assets/sertif/g15.png";
 
+// ==========================================
+// ACHIEVEMENTS (AWARDS & CERTIFICATIONS)
+// ==========================================
 export const Data = [
   {
+    id: "3",
+    type: "award",
+    imageUrl: "https://drive.google.com/file/d/1ZnDI-y9aeo6wTlE_EzIpZleXLoIflrEv/view?usp=drive_link",
+    gambar: g10,
+    title: "Finalist Hackathon Innovate Code-Up",
+    organization: "ASTRA Tech",
+    issueDate: "May 2026",
+    badge: "Competition Finalist",
+  },
+  {
+    id: "4",
+    type: "award",
+    imageUrl: "https://drive.google.com/file/d/1ZnDI-y9aeo6wTlE_EzIpZleXLoIflrEv/view?usp=drive_link",
+    gambar: g11,
+    title: "Finalist Innovation Competition",
+    organization: "Telkom University",
+    issueDate: "Feb 2026",
+    badge: "Innovation Award",
+  },
+  {
+    id: "5",
+    type: "award",
+    imageUrl: "https://drive.google.com/file/d/1dk9iiXFvDWJoRyJsQp-e0dPRLOmmf0t0/view?usp=drive_link",
+    gambar: g12,
+    title: "Finalist International Business Plan Competition",
+    organization: "Ciputra University",
+    issueDate: "Feb 2026",
+    badge: "International Finalist",
+  },
+  {
+    id: "6",
+    type: "award",
+    imageUrl: "https://drive.google.com/file/d/1uUfo9EO8hq2lehPCTKzUssPcXBjQT1Cv/view?usp=drive_link",
+    gambar: g13,
+    title: "4th Place UI/UX Competition",
+    organization: "Telkom University Purwokerto",
+    issueDate: "November 2025",
+    badge: "4th Winner",
+  },
+  {
     id: "1",
+    type: "certification",
     imageUrl: "https://www.dicoding.com/certificates/EYX4QOR3OPDL",
     gambar: g8,
     title: "Penerapan Data Science dengan Microsoft Fabric",
     organization: "Dicoding x Microsoft",
     issueDate: "May 2026",
+    badge: "Data Science",
   },
   {
     id: "2",
+    type: "certification",
     imageUrl: "https://www.dicoding.com/certificates/MRZMWNMMRPYQ",
     gambar: g9,
-    title: "Dasar AI",
+    title: "Dasar AI (Artificial Intelligence Fundamentals)",
     organization: "Dicoding x DBS Foundation",
     issueDate: "May 2026",
-  },
-  {
-    id: "3",
-    imageUrl: "waiting for link",
-    gambar: g10,
-    title: "Finalist Hackathon Innovate Code-Up",
-    organization: "ASTRA Tech",
-    issueDate: "May 2026",
-  },
-  {
-    id: "4",
-    imageUrl:
-      "https://drive.google.com/file/d/1ZnDI-y9aeo6wTlE_EzIpZleXLoIflrEv/view?usp=drive_link",
-    gambar: g11,
-    title: "Finalist Innovation Competition",
-    organization: "Telkom University",
-    issueDate: "Feb 2026",
-  },
-  {
-    id: "5",
-    imageUrl:
-      "https://drive.google.com/file/d/1dk9iiXFvDWJoRyJsQp-e0dPRLOmmf0t0/view?usp=drive_link",
-    gambar: g12,
-    title: "Finalist International Business Plan Competition",
-    organization: "Ciputra University",
-    issueDate: "Feb 2026",
-  },
-  {
-    id: "6",
-    imageUrl:
-      "https://drive.google.com/file/d/1uUfo9EO8hq2lehPCTKzUssPcXBjQT1Cv/view?usp=drive_link",
-    gambar: g13,
-    title: "4th place UI UX Competition",
-    organization: "Telkom University Purwokerto",
-    issueDate: "November 2025",
+    badge: "Artificial Intelligence",
   },
   {
     id: "7",
+    type: "award",
     imageUrl: "",
     gambar: g14,
-    title: "Open House 2025",
+    title: "Project Showcase — Open House Telkom University",
     organization: "Telkom University",
     issueDate: "Dec 2025",
+    badge: "Honor & Exhibition",
   },
   {
     id: "8",
+    type: "award",
     imageUrl: "",
     gambar: g15,
-    title: "FIT EXPO 2025",
+    title: "Tech Innovation Exhibition — FIT EXPO",
     organization: "Telkom University",
     issueDate: "Jun 2025",
-  },
-  {
-    id: "7",
-    imageUrl: "https://www.codepolitan.com/c/AHZR9BD/",
-    gambar: g1,
-    title: "Belajar Javascript",
-    organization: "CODEPOLITAN",
-    issueDate: "November 2024",
-  },
-  {
-    id: "8",
-    imageUrl: "https://www.codepolitan.com/c/6QFKRAA/",
-    gambar: g2,
-    title: "Belajar Konsep OOP di Javascript",
-    organization: "CODEPOLITAN",
-    issueDate: "January 2025",
+    badge: "Honor & Exhibition",
   },
   {
     id: "9",
-    imageUrl: "https://www.codepolitan.com/c/E1BAVQU/",
-    gambar: g3,
-    title: "Belajar Javascript Asynchronous",
+    type: "certification",
+    imageUrl: "https://www.codepolitan.com/c/AHZR9BD/",
+    gambar: g1,
+    title: "Belajar Javascript & Algoritma",
     organization: "CODEPOLITAN",
-    issueDate: "January 2025",
+    issueDate: "November 2024",
+    badge: "Programming",
   },
   {
     id: "10",
-    imageUrl: "https://www.codepolitan.com/c/QZIFGIB/",
-    gambar: g4,
-    title: "Belajar Javascript DOM",
+    type: "certification",
+    imageUrl: "https://www.codepolitan.com/c/6QFKRAA/",
+    gambar: g2,
+    title: "Object-Oriented Programming (OOP) JavaScript",
     organization: "CODEPOLITAN",
-    issueDate: "November 2024",
+    issueDate: "January 2025",
+    badge: "Software Engineering",
   },
   {
     id: "11",
-    imageUrl: "https://www.codepolitan.com/c/L83NEBF/",
-    gambar: g5,
-    title: "Belajar AJAX dan Web API",
+    type: "certification",
+    imageUrl: "https://www.codepolitan.com/c/E1BAVQU/",
+    gambar: g3,
+    title: "Asynchronous JavaScript & API Integration",
     organization: "CODEPOLITAN",
     issueDate: "January 2025",
+    badge: "Web Engineering",
   },
   {
     id: "12",
+    type: "certification",
     imageUrl: "https://www.codepolitan.com/c/FJHNIKE/",
     gambar: g6,
-    title: "Belajar React Fundamental",
+    title: "React JS Fundamental & Component Architecture",
     organization: "CODEPOLITAN",
     issueDate: "February 2025",
+    badge: "Frontend Framework",
   },
   {
     id: "13",
-    imageUrl:
-      "https://www.udemy.com/certificate/UC-31ad8e8d-4560-413a-a579-bcc23c2bafb2/",
+    type: "certification",
+    imageUrl: "https://www.udemy.com/certificate/UC-31ad8e8d-4560-413a-a579-bcc23c2bafb2/",
     gambar: g7,
-    title: "Belajar React sampai mahir",
+    title: "React Modern & State Management Mastery",
     organization: "UDEMY",
-    issueDate: "Mey 2025",
+    issueDate: "May 2025",
+    badge: "Frontend Framework",
   },
 ];
 
-import p1 from "../assets/projek/p1.png";
-import p2 from "../assets/projek/p2.png";
-import p3 from "../assets/projek/p3.png";
-import p4 from "../assets/projek/p4.png";
-import p5 from "../assets/projek/p5.png";
-import p6 from "../assets/projek/p6.png";
-import p7 from "../assets/projek/p7.png";
-import p8 from "../assets/projek/p8.png";
-import p9 from "../assets/projek/p9.png";
-import p10 from "../assets/projek/p10.png";
-
-import tml from "../assets/skill/html5-color.svg";
-import css from "../assets/skill/css-color.svg";
+// ==========================================
+// TECH STACK ICONS
+// ==========================================
 import js from "../assets/skill/javascript-color.svg";
 import riek from "../assets/skill/react-color.svg";
-import redux from "../assets/skill/redux-color.svg";
-import router from "../assets/skill/reactrouter-color.svg";
-import vite from "../assets/skill/vite-color.svg";
 import tailwind from "../assets/skill/tailwindcss-color.svg";
-import framer from "../assets/skill/framer-color.svg";
 import next from "../assets/skill/nextjs.svg";
 import ts from "../assets/skill/ts.svg";
 import lara from "../assets/skill/lara.svg";
@@ -173,36 +168,322 @@ import matplotlib from "../assets/skill/matplotlib.svg";
 import mysql from "../assets/skill/mysql.svg";
 import mongo from "../assets/skill/mongo.svg";
 import powerbi from "../assets/skill/powerbi.png";
+import expressIcon from "../assets/skill/express.svg";
+import pytorchIcon from "../assets/skill/pytorch.svg";
 
-import londri from '../assets/datadata/londri.png'
-import churn from '../assets/datadata/churn.png'
-import kmeans from '../assets/datadata/kmeans.png'
-import ensemble from '../assets/datadata/ensemble.png'
-import fraud from '../assets/datadata/fraud.png'
-import saham from '../assets/datadata/saham.png'
-import hrattrition from '../assets/datadata/hr.png'
+// PROJECT IMAGES
+import p1 from "../assets/projek/p1.png";
+import p9 from "../assets/projek/p9.png";
+import p10 from "../assets/projek/p10.png";
+import londri from "../assets/datadata/londri.png";
+import churn from "../assets/datadata/churn.png";
+import kmeans from "../assets/datadata/kmeans.png";
+import ensemble from "../assets/datadata/ensemble.png";
+import fraud from "../assets/datadata/fraud.png";
+import saham from "../assets/datadata/saham.png";
+import hrattrition from "../assets/datadata/hr.png";
 
-
+// ==========================================
+// CURATED PROJECTS (14 HIGH-IMPACT PROJECTS)
+// ==========================================
 export const project = [
-
-  // DATA SCIENCE
-  //  Untuk gambar cover: import lalu ganti null di img.
-
+  // ──────────────────────────────────────────
+  // 1. MACHINE LEARNING & COMPUTER VISION / NLP
+  // ──────────────────────────────────────────
   {
-    id: "9",
-    nama: "Bank Churn Prediction - Stacking Ensemble & Optuna",
-    desc: "Built a customer churn prediction system using a Stacking Ensemble architecture (XGBoost, LightGBM, and CatBoost) combined with automated hyperparameter optimization using Optuna and anti-data leakage preprocessing pipelines.",
-    techStack: [python, sklearn, pandas, numpy, matplotlib],
-    img: ensemble,
+    id: "bdc-waste-classification",
+    nama: "BDC 2026 — Solid Waste Image Classification",
+    desc: "Represented Telkom University in Satria Data BDC: Deep Learning project for classifying solid waste into Recyclable, Electronic, and Organic categories with rigorous label-noise investigation, achieving ~97.07% validation accuracy.",
+    techStack: [python, pytorchIcon, sklearn, numpy, matplotlib],
+    img: null,
+    badge: "Satria Data BDC — Telkom Univ Rep",
     intro:
-    "This project focuses on predicting bank customer churn using advanced ensemble machine learning techniques. Multiple gradient boosting models were optimized independently using Optuna and combined into a Stacking Ensemble framework to improve prediction robustness and generalization performance.",
+      "As a representative of Telkom University in the prestigious Satria Data - Big Data Challenge (BDC) 2026, I engineered an end-to-end Deep Learning pipeline to classify municipal solid waste images into three distinct management streams: Recyclable, Electronic, and Organic. Beyond standard transfer learning, this study placed high emphasis on dataset quality auditing and systematic label-noise mitigation.",
     porto:
-    "The project includes exploratory data analysis, feature engineering, anti-leakage preprocessing pipelines, automated hyperparameter tuning, ensemble modeling, and classification evaluation for customer churn prediction.",
-    category: "Data",
+      "The pipeline covers multi-stage image preprocessing, data augmentation, baseline convolutional architectures, iterative transfer learning, validation evaluation, in-depth classification error analysis, and investigating mislabeled dataset samples to improve generalization on unseen real-world waste items.",
+    category: "Machine Learning",
+    demo: "",
+    githubUrl: "https://github.com/muhammad-haikal-mh",
 
     caseStudy: {
       problem:
-      "Customer churn remains a critical challenge in the banking industry because losing customers directly impacts long-term revenue and retention. Building a reliable churn prediction model requires more than a single algorithm — ensemble approaches that combine multiple strong learners can significantly improve predictive performance while reducing model bias and variance.",
+        "Automated waste sorting is a cornerstone for sustainable Smart Cities, yet real-world waste image datasets frequently suffer from severe visual ambiguity, varying illumination, occlusions, and human annotator noise. In the BDC Satria Data competition, the primary challenge was not only maximizing validation accuracy across Recyclable, Electronic, and Organic waste, but also identifying inconsistent/mislabeled ground-truth data points that skew model decision boundaries.",
+
+      dataset: {
+        source: "Satria Data BDC 2026 — Waste Image Dataset",
+        rows: "26,000 Images (3 Classes)",
+        features: "RGB Image Data (Recyclable, Electronic, Organic)",
+        target: "3-Class Waste Categorization",
+      },
+
+      methodology: [
+        {
+          step: "Data Ingestion & Integrity Auditing",
+          desc: "Explored class distributions across Recyclable, Electronic, and Organic classes, identifying lighting variances, background clutters, and resolution differences.",
+        },
+        {
+          step: "Preprocessing & Data Augmentation",
+          desc: "Implemented resilient transformations: random affine rotations, color jittering, horizontal/vertical flips, and normalized tensor scaling to simulate diverse disposal environments.",
+        },
+        {
+          step: "Model Training & Transfer Learning",
+          desc: "Benchmarked baseline CNNs and fine-tuned pre-trained deep convolutional backbones using adaptive learning rate scheduling and cross-entropy loss with label smoothing.",
+        },
+        {
+          step: "Validation & Classification Report",
+          desc: "Assessed multi-class precision, recall, and macro F1 scores across all three waste classes on stratified validation splits.",
+        },
+        {
+          step: "Label-Noise Investigation & Error Analysis",
+          desc: "Systematically compared high-confidence model misclassifications against original annotations, discovering numerous mislabeled samples in the ground truth and quantifying their impact on loss convergence.",
+        },
+      ],
+
+      visualizations: [
+        {
+          title: "Model Validation Metrics",
+          type: "bar",
+          data: {
+            labels: ["Baseline CNN", "Fine-tuned Model", "Macro F1 Score", "Validation Accuracy"],
+            values: [0.824, 0.941, 0.9748, 0.9707],
+          },
+          yLabel: "Score (0 - 1.0)",
+        },
+        {
+          title: "Class-Wise F1 Performance",
+          type: "doughnut",
+          data: {
+            labels: ["Recyclable", "Electronic Waste", "Organic Waste"],
+            values: [0.972, 0.981, 0.971],
+          },
+        },
+        {
+          title: "Comprehensive Metric Radar",
+          type: "radar",
+          data: {
+            labels: ["Val Accuracy", "Macro Precision", "Macro Recall", "Macro F1", "Robustness"],
+            values: [0.971, 0.976, 0.973, 0.975, 0.965],
+          },
+        },
+      ],
+
+      insights: [
+        "Achieved a peak validation accuracy of 97.07% and a Macro F1 score of 0.9748 across all three waste classes.",
+        "Deep transfer learning with label smoothing significantly outperformed baseline CNN architectures by preventing overconfident boundary overfitting.",
+        "Label noise audit revealed multiple mislabeled samples in the competition training set (e.g., contaminated electronic plastics labeled as general recyclables).",
+        "Investigating error patterns proved critical: addressing dataset label noise yielded stronger real-world generalization than simply tuning hyperparameter grids blindly.",
+        "Representing Telkom University at Satria Data BDC provided invaluable rigor in handling competitive data science constraints under strict evaluation criteria.",
+      ],
+
+      notebookUrl: "",
+      githubUrl: "https://github.com/muhammad-haikal-mh",
+    },
+  },
+
+  {
+    id: "road-damage-detection",
+    nama: "Road Damage Detection & Tracking — YOLOv26 & ByteTrack",
+    desc: "Computer vision system for detecting and tracking road potholes and cracks. Scaled dataset from 700 to 5,000 images, converted polygon annotations to YOLO format, applied YOLOv26n + ByteTrack, and evaluated instance & semantic segmentation.",
+    techStack: [python, pytorchIcon, sklearn, numpy, matplotlib],
+    img: null,
+    badge: "Computer Vision & Tracking",
+    intro:
+      "This project developed a resilient real-time computer vision system to detect and track municipal road damage, specifically potholes and cracks. The engineering journey spanned dataset expansion from a 700-image baseline to 5,000 images, multi-source cleaning, YOLOv26n training, ByteTrack temporal object tracking, and deep comparative experiments with instance and semantic segmentation.",
+    porto:
+      "Covered full end-to-end pipeline: raw image ingestion, polygon-to-YOLO bounding box conversion, duplicate removal, annotation refinement, YOLOv26n object detection, ByteTrack video tracking, and segmentation benchmarks (Pothole Instance Segmentation vs Crack Semantic Segmentation).",
+    category: "Machine Learning",
+    demo: "",
+    githubUrl: "https://github.com/muhammad-haikal-mh",
+
+    caseStudy: {
+      problem:
+        "Road infrastructure inspection is traditionally manual, slow, and hazardous. Automated vision solutions struggle with severe real-world challenges: irregular crack shapes, noisy multi-source datasets, ambiguous 4-point polygon annotations from tools like Roboflow, and camera motion causing duplicate detections across successive video frames.",
+
+      dataset: {
+        source: "Self-collected & Expanded Multi-Source Dataset",
+        rows: "5,000 Images (Expanded from 700 baseline)",
+        features: "Pothole & Crack Classes with Bounding Boxes & Polygons",
+        target: "Real-time Detection, Tracking & Boundary Segmentation",
+      },
+
+      methodology: [
+        {
+          step: "Dataset Curation & Expansion",
+          desc: "Initiated with a self-collected baseline of 700 images with 2 classes (pothole, crack). Expanded dataset to ~5,000 images to overcome limited baseline generalization.",
+        },
+        {
+          step: "Data Cleaning & Polygon-to-YOLO Conversion",
+          desc: "Resolved inconsistent annotations, noisy bounding boxes, and duplicate images. Converted Roboflow 4-point polygon annotations into standard YOLO coordinate format.",
+        },
+        {
+          step: "YOLOv26n Model Training",
+          desc: "Trained state-of-the-art YOLOv26n with mosaic augmentation, multi-scale training, and anchor box optimization.",
+        },
+        {
+          step: "ByteTrack Video Tracking Integration",
+          desc: "Integrated ByteTrack to assign consistent object IDs to road damages across video streams, preventing duplicate counting during vehicle traversal.",
+        },
+        {
+          step: "Segmentation Exploration (Instance vs Semantic)",
+          desc: "Conducted experiments comparing bounding-box detection against Pothole Instance Segmentation (Mask mAP@50: 43.3%) and Crack Semantic Segmentation (mIoU: 69.8%).",
+        },
+      ],
+
+      visualizations: [
+        {
+          title: "Detection Performance (mAP@50)",
+          type: "bar",
+          data: {
+            labels: ["Baseline (700 img)", "Cleaned Pipeline (5k)", "Pothole Class mAP", "Crack Class mAP"],
+            values: [0.59, 0.62, 0.77, 0.84],
+          },
+          yLabel: "mAP@50",
+        },
+        {
+          title: "Segmentation Experiment Benchmark",
+          type: "bar",
+          data: {
+            labels: ["Pothole Instance Seg (Mask mAP)", "Crack Semantic Seg (mIoU)"],
+            values: [0.433, 0.698],
+          },
+          yLabel: "Score (0 - 1.0)",
+        },
+        {
+          title: "System Performance Metrics",
+          type: "radar",
+          data: {
+            labels: ["Pothole mAP", "Crack mAP", "Inference Speed", "Tracking Stability", "Data Robustness"],
+            values: [0.77, 0.84, 0.92, 0.85, 0.80],
+          },
+        },
+      ],
+
+      insights: [
+        "Dataset expansion and rigorous annotation cleaning increased class-level detection to 77% mAP@50 for Potholes and 84% mAP@50 for Cracks.",
+        "Roboflow 4-point polygon conversion to YOLO format resolved boundary skew and stabilized regression loss during bounding box prediction.",
+        "ByteTrack successfully tracked damage entities across consecutive frames, filtering false positive flickers and preventing duplicate road damage reports.",
+        "Segmentation findings: Pothole instance segmentation achieved 43.3% Mask mAP@50, while crack semantic segmentation achieved 69.8% mIoU. Crucially, a more detailed pixel-level approach did NOT automatically yield superior operational results due to indistinct asphalt texture edges.",
+      ],
+
+      notebookUrl: "",
+      githubUrl: "https://github.com/muhammad-haikal-mh",
+    },
+  },
+
+  {
+    id: "disguised-gambling-nlp",
+    nama: "Disguised Online Gambling Detection — IndoBERT & BiGRU",
+    desc: "Hybrid NLP architecture to detect disguised online gambling promotions in Indonesian social media comments using Obfuscation-Aware text normalization, IndoBERT embeddings, BiGRU, and Self-Attention over 43,608 YouTube comments.",
+    techStack: [python, pytorchIcon, sklearn, numpy, matplotlib],
+    img: null,
+    badge: "NLP & Deep Learning",
+    intro:
+      "Online gambling (judi online) syndicates aggressively promote illegal platforms across Indonesian social media comments using sophisticated character obfuscations to bypass keyword filters. This project designed a hybrid deep learning NLP architecture combining Obfuscation-Aware text normalization with IndoBERT contextual embeddings, Bidirectional GRU, and Self-Attention mechanisms.",
+    porto:
+      "Trained on a curated corpus of 43,608 Indonesian YouTube comments. The system identifies disguised promotional text patterns (e.g., zero-width spaces, leetspeak, punctuation splices, unicode homoglyphs) and classifies toxic gambling spam with high sensitivity and minimal false alarms.",
+    category: "Machine Learning",
+    demo: "",
+    githubUrl: "https://github.com/muhammad-haikal-mh",
+
+    caseStudy: {
+      problem:
+        "Standard regex filters and bag-of-words classifiers fail completely against disguised spam because promoters employ deliberate noise: character substitutions ('g4c0r', 's10t'), intra-word punctuation ('j.u.d.i', 'w-d-m-a-x'), unicode homoglyphs, and zero-width spaces. A robust model must simultaneously recognize character-level camouflage and sentence-level contextual semantics.",
+
+      dataset: {
+        source: "Curated Indonesian YouTube Comments Corpus",
+        rows: 43608,
+        features: "Raw Text Comments, Normalized Tokens, Obfuscation Markers",
+        target: "Binary Classification (Gambling Promotion vs Non-Promotion)",
+      },
+
+      obfuscationPatterns: [
+        { raw: "j.u.d.i g4c0r d1s1n1", normalized: "judi gacor disini", technique: "Punctuation Insertion & Leetspeak" },
+        { raw: "d-e-p-0-s-i-t cep4t", normalized: "deposit cepat", technique: "Hyphen Splicing & Numeral Substitution" },
+        { raw: "s l 0 t m4xm1n", normalized: "slot maxwin", technique: "Space Infiltration & Vowel Replacement" },
+        { raw: "link w\u200Bd gampang cair", normalized: "link wd gampang cair", technique: "Zero-Width Invisible Space Injection" },
+      ],
+
+      methodology: [
+        {
+          step: "Corpus Ingestion & Annotation",
+          desc: "Scraped and verified 43,608 Indonesian comments across viral public YouTube videos prone to gambling promotional bot attacks.",
+        },
+        {
+          step: "Obfuscation-Aware Normalization",
+          desc: "Built custom text preprocessing: regex de-obfuscator for leetspeak (0->o, 1->i, 4->a), zero-width character removal, punctuation striping, and Indonesian slang token reconstruction.",
+        },
+        {
+          step: "IndoBERT Contextual Embeddings",
+          desc: "Extracted rich Indonesian sentence representations using pre-trained IndoBERT backbones to capture nuanced semantic context.",
+        },
+        {
+          step: "BiGRU Sequence Modeling",
+          desc: "Processed contextual embeddings through Bidirectional Gated Recurrent Units (BiGRU) to model long-range sequential dependencies in both forward and backward directions.",
+        },
+        {
+          step: "Self-Attention Mechanism & Classification",
+          desc: "Applied a Self-Attention layer to dynamically weight promotional intent tokens before final sigmoid classification.",
+        },
+      ],
+
+      visualizations: [
+        {
+          title: "Model Performance Comparison",
+          type: "bar",
+          data: {
+            labels: ["Baseline TF-IDF", "Standard IndoBERT", "Hybrid IndoBERT+BiGRU", "Obfuscation+IndoBERT+BiGRU+Attn"],
+            values: [0.76, 0.88, 0.92, 0.965],
+          },
+          yLabel: "Macro F1 Score",
+        },
+        {
+          title: "Evaluation Metrics (Best Model)",
+          type: "radar",
+          data: {
+            labels: ["Accuracy", "F1-Score", "Recall", "ROC-AUC", "Specificity"],
+            values: [0.962, 0.965, 0.958, 0.982, 0.967],
+          },
+        },
+        {
+          title: "Comment Class Distribution",
+          type: "doughnut",
+          data: {
+            labels: ["Disguised Gambling Spam", "Legitimate Comments"],
+            values: [12450, 31158],
+          },
+        },
+      ],
+
+      insights: [
+        "Obfuscation-Aware normalization was the single most impactful preprocessing step, increasing baseline keyword detection recall by over 34%.",
+        "IndoBERT contextual embeddings captured colloquial Indonesian phrasing that generic multilingual BERT models frequently misunderstood.",
+        "The addition of BiGRU and Self-Attention allowed the network to focus attention weights directly on masked promotional phrases even when surrounded by benign chatter.",
+        "Achieved 96.2% Accuracy, 96.5% F1-Score, and an outstanding 0.982 ROC-AUC on a rigorous test split of 43,608 comments.",
+      ],
+
+      notebookUrl: "",
+      githubUrl: "https://github.com/muhammad-haikal-mh",
+    },
+  },
+
+  {
+    id: "9",
+    nama: "Bank Churn Prediction — Stacking Ensemble & Optuna",
+    desc: "Customer churn prediction system utilizing Stacking Ensemble architecture (XGBoost, LightGBM, CatBoost) combined with automated Optuna hyperparameter optimization and anti-data leakage pipelines.",
+    techStack: [python, sklearn, pandas, numpy, matplotlib],
+    img: ensemble,
+    badge: "Ensemble Machine Learning",
+    intro:
+      "This project focuses on predicting bank customer churn using advanced ensemble machine learning techniques. Multiple gradient boosting models were optimized independently using Optuna and combined into a Stacking Ensemble framework to improve prediction robustness and generalization performance.",
+    porto:
+      "The project includes exploratory data analysis, feature engineering, anti-leakage preprocessing pipelines, automated hyperparameter tuning, ensemble modeling, and classification evaluation for customer churn prediction.",
+    category: "Machine Learning",
+    demo: "",
+    githubUrl: "https://github.com/muhammad-haikal-mh",
+
+    caseStudy: {
+      problem:
+        "Customer churn remains a critical challenge in the banking industry because losing customers directly impacts long-term revenue and retention. Building a reliable churn prediction model requires more than a single algorithm — ensemble approaches that combine multiple strong learners can significantly improve predictive performance while reducing model bias and variance.",
 
       dataset: {
         source: "Kaggle - Bank Customer Churn Dataset",
@@ -260,11 +541,7 @@ export const project = [
           title: "Optuna Optimization Results",
           type: "bar",
           data: {
-            labels: [
-              "XGBoost Best Trial",
-              "LightGBM Best Trial",
-              "CatBoost Best Trial",
-            ],
+            labels: ["XGBoost Best Trial", "LightGBM Best Trial", "CatBoost Best Trial"],
             values: [0.78, 0.79, 0.8],
           },
           yLabel: "Cross-Validation F1-Score",
@@ -284,193 +561,31 @@ export const project = [
         "Optuna significantly improved hyperparameter tuning efficiency by adaptively searching optimal parameter combinations without exhaustive brute-force search.",
         "The sklearn preprocessing pipeline successfully prevented data leakage by ensuring transformations were fitted only on training data.",
         "Age and IsActiveMember emerged as the most influential features affecting customer churn probability.",
-        "The Logistic Regression meta-learner successfully learned error patterns from multiple base models, producing more stable final predictions.",
-        "Increasing the number of Optuna trials was identified as a potential improvement area for further boosting model performance.",
       ],
 
       notebookUrl: "",
-      githubUrl: "",
-
+      githubUrl: "https://github.com/muhammad-haikal-mh",
     },
   },
-  {
-    id: "14",
-    nama: "Indonesia Stock Market Performance Analysis (2003-2024)",
-    desc: "Comprehensive analysis of 29 Indonesian stock market companies over 21 years, featuring time-series exploratory analysis, COVID-19 impact comparison, and K-Means clustering for risk-return segmentation.",
-    techStack: [python, pandas, numpy, matplotlib, sklearn],
-    img: saham,
-    intro:
-    "This project explores the historical performance of 29 companies listed on the Indonesia Stock Exchange (IDX) from 2003 to 2024. The analysis focuses on stock return behavior, market volatility, sector performance, and clustering stocks into risk-return profiles using unsupervised machine learning techniques.",
-    porto:
-    "The project combines financial exploratory data analysis, COVID-19 comparative analysis, feature engineering, and K-Means clustering to understand market behavior changes before, during, and after the pandemic period.",
-    category: "Data",
 
-    caseStudy: {
-      problem:
-      "The Indonesian stock market experienced significant volatility during the COVID-19 pandemic, affecting company performance across multiple sectors. A deeper analysis is required to understand how listed companies behaved during and after the crisis, identify shifts in risk-return characteristics, and segment stocks based on financial behavior using unsupervised learning approaches.",
-
-      dataset: {
-        source: "IDX Historical Stock Data",
-        rows: 136599,
-        features: 7,
-        target: "Risk-Return Profiling & Cluster Segmentation",
-      },
-
-      methodology: [
-        {
-          step: "Data Understanding",
-          desc: "Validated data structure, stock distribution across 8 sectors, and 21-year historical coverage from 2003 to 2024.",
-        },
-        {
-          step: "Data Cleaning",
-          desc: "Performed missing value and duplicate checking, datetime conversion, and outlier detection using the IQR method.",
-        },
-        {
-          step: "EDA & Feature Engineering",
-          desc: "Analyzed stock price trends, daily return distributions, correlation heatmaps, rolling volatility, and sector-based risk-return characteristics.",
-        },
-        {
-          step: "COVID-19 Comparative Analysis",
-          desc: "Segmented data into Pre-COVID, COVID-19, and Post-COVID periods to compare return distributions, volatility, Sharpe Ratio, and market behavior changes.",
-        },
-        {
-          step: "K-Means Clustering",
-          desc: "Applied feature engineering using Mean Return, Volatility, Sharpe Ratio, and Average Volume, followed by RobustScaler preprocessing and K-Means clustering optimization using Elbow and Silhouette methods.",
-        },
-        {
-          step: "Cluster Interpretation",
-          desc: "Interpreted stock clusters into Defensive, Aggressive, and High-Risk categories while analyzing cluster migration across different periods.",
-        }
-      ],
-
-      visualizations: [
-          {
-            title: 'Silhouette Score per Periode',
-            type: 'bar',
-            data: {
-              labels: ['COVID-19', 'Pasca-COVID-19'],
-              values: [0.2435, 0.3825],
-            },
-            yLabel: 'Silhouette Score',
-          },
-          {
-            title: 'Distribusi Klaster Pasca-COVID-19',
-            type: 'doughnut',
-            data: {
-              labels: ['Defensif', 'Agresif', 'Berisiko'],
-              values: [16, 8, 5],
-            },
-          },
-          {
-            title: 'Rata-rata Volatilitas per Periode',
-            type: 'bar',
-            data: {
-              labels: ['Pre-COVID', 'COVID-19', 'Pasca-COVID-19'],
-              values: [0.018, 0.029, 0.021],
-            },
-            yLabel: 'Std Dev Return',
-          },
-          {
-            title: 'Rata-rata Sharpe Ratio per Periode',
-            type: 'radar',
-            data: {
-              labels: ['Mean Return', 'Volatility (inv)', 'Sharpe Ratio', 'Cluster Quality', 'Stability'],
-              values: [0.55, 0.72, 0.70, 0.65, 0.68], // normalized 0-1 untuk Pasca-COVID
-            },
-          },
-        ],
-      
-      screenshots: [],
-      insights: [
-        "The dataset contains 136,599 historical records from 29 IDX-listed companies across 8 sectors over a 21 year period.",
-        "Cluster quality improved significantly after the pandemic, with the Silhouette Score increasing from 0.2435 during COVID-19 to 0.3825 in the post-pandemic period.",
-        "Banking sector stocks such as BBCA, BBRI, BBNI, and BMRI consistently remained in the Defensive cluster during both pandemic and recovery periods.",
-        "Energy and commodity stocks including ADRO, MEDC, and PTBA successfully shifted into the Aggressive cluster following economic recovery.",
-        "Several telecommunications and healthcare stocks experienced performance degradation due to higher volatility without proportional returns.",
-        "Market volatility decreased from 0.029 during COVID-19 to 0.021 in the post-pandemic period, indicating a more stable market environment after the crisis.",
-      ],
-  
-      notebookUrl: "",
-      githubUrl: "",
-    },    
-  },
-  {
-  id: "17",
-  nama: "HR Attrition Analytics Dashboard",
-  desc: "Interactive data visualization project analyzing employee attrition behavior in the HR domain using Power BI to identify retention risks, workforce patterns, and business insights.",
-  techStack: [powerbi],
-  img: hrattrition,
-  intro:
-    "This project explores employee attrition patterns using IBM HR Analytics dataset containing demographic, financial, and job-related data. The analysis focuses on understanding factors influencing attrition behavior such as overtime, job roles, age groups, monthly income, and department distribution through an interactive Power BI dashboard.",
-  porto:
-    "The project includes exploratory analysis and dashboard visualization to uncover employee retention risks and provide actionable business insights for improving workforce retention strategies.",
-  category: "Data",
-
-  caseStudy: {
-    problem:
-      "Employee attrition is one of the major challenges in human resource management because losing key talent can significantly impact productivity and long-term business growth. Although companies collect large volumes of employee data, identifying attrition patterns and understanding the factors behind employee turnover remain difficult without proper analysis and visualization.",
-    dataset: {
-      source: "Kaggle - IBM HR Analytics Employee Attrition Dataset",
-      rows: 1470,
-      features: 35,
-      target: "Employee Attrition Analysis",
-    },
-
-    methodology: [
-      {
-        step: "Data Collection",
-        desc: "Collected IBM HR Analytics dataset containing demographic, financial, and behavioral employee information from Kaggle.",
-      },
-      {
-        step: "Data Preparation",
-        desc: "Cleaned and transformed the dataset in Power Query by removing redundant columns (EmployeeCount, Over18, StandardHours) and creating calculated columns such as Age Group for segmentation analysis.",
-      },
-      {
-        step: "DAX Measures Development",
-        desc: "Built custom DAX measures including Attrition Rate, Total Employees, Avg Monthly Income, Avg Job Satisfaction, and Attrition Count to power dynamic KPI cards and visualizations.",
-      },
-      {
-        step: "Dashboard Visualization",
-        desc: "Developed an interactive Power BI dashboard to visualize attrition rates, department comparisons, age group trends, job role breakdowns, and employee distribution.",
-      },
-      {
-        step: "Business Insight Analysis",
-        desc: "Generated actionable insights to support HR retention strategies and improve employee satisfaction and engagement.",
-      },
-    ],
-
-    screenshots: [
-      { img: hrattrition, caption: "Overview Dashboard using Power BI" },
-    ],
-
-    insights: [
-      "The overall employee attrition rate reached 16.1% from a total of 1,470 employees, exceeding the ideal threshold of 10%.",
-      "Research & Development department recorded the highest attrition count (133 employees), followed by Sales (92 employees).",
-      "Laboratory Technician and Sales Executive are the job roles with the highest attrition numbers.",
-      "Employees aged 25–34 contribute the most to attrition, suggesting early-career disengagement as a key risk factor.",
-      "Employees working overtime showed approximately 2x higher attrition tendency compared to non-overtime employees.",
-      "The attrition rate of 16.1% significantly exceeds the 10% ideal benchmark, indicating a critical need for retention interventions.",
-      "HR retention programs should prioritize high-risk segments including young employees in R&D and Sales roles with frequent overtime.",
-    ],
-
-    notebookUrl: "", // → Opsional: link Power BI published report
-    githubUrl:   "", // → Opsional: link GitHub repository
-  },
-  },
   {
     id: "10",
-    nama: "Fraud Detection Transaction",
-    desc: "Developed a fraud transaction classification system using Decision Tree modeling, SMOTE balancing techniques, and GridSearchCV hyperparameter optimization.",
+    nama: "Fraud Detection Transaction — SMOTE & Decision Tree",
+    desc: "Fraud transaction classification system using Decision Tree modeling, SMOTE imbalanced data handling, and GridSearchCV hyperparameter optimization.",
     techStack: [python, sklearn, pandas, numpy, matplotlib],
     img: fraud,
+    badge: "Imbalanced Data & Classification",
     intro:
-    "This project focuses on detecting fraudulent financial transactions using machine learning classification techniques. The workflow emphasizes handling severe class imbalance problems while maintaining reliable fraud detection performance.",
+      "This project focuses on detecting fraudulent financial transactions using machine learning classification techniques. The workflow emphasizes handling severe class imbalance problems while maintaining reliable fraud detection performance.",
     porto:
-    "The project covers data preprocessing, feature engineering, imbalanced data handling using SMOTE, machine learning modeling, hyperparameter optimization, and fraud detection evaluation.",
-    category: "Data",
+      "The project covers data preprocessing, feature engineering, imbalanced data handling using SMOTE, machine learning modeling, hyperparameter optimization, and fraud detection evaluation.",
+    category: "Machine Learning",
+    demo: "",
+    githubUrl: "https://github.com/muhammad-haikal-mh",
+
     caseStudy: {
       problem:
-      "Digital financial transactions are highly vulnerable to fraudulent activities that are difficult to identify manually. Fraud datasets are typically imbalanced, where fraudulent transactions represent only a small portion of the overall data, making accurate classification particularly challenging.",
+        "Digital financial transactions are highly vulnerable to fraudulent activities that are difficult to identify manually. Fraud datasets are typically imbalanced, where fraudulent transactions represent only a small portion of the overall data, making accurate classification particularly challenging.",
 
       dataset: {
         source: "Kaggle - Fraud Detection Transactions Dataset",
@@ -489,588 +604,468 @@ export const project = [
           desc: "Analyzed numerical distributions, categorical feature patterns, and feature correlations to understand fraud behavior characteristics.",
         },
         {
-          step: "Feature Engineering",
-          desc: "Applied One-Hot Encoding to categorical transaction-related variables for machine learning compatibility.",
-        },
-        {
           step: "Handling Imbalanced Data",
           desc: "Used SMOTE (Synthetic Minority Oversampling Technique) to balance fraud and non-fraud classes within training data.",
         },
         {
-          step: "Decision Tree Modeling",
-          desc: "Trained a Decision Tree classifier using optimized depth and balanced class weighting strategies.",
-        },
-        {
-          step: "Hyperparameter Optimization",
-          desc: "Optimized Decision Tree parameters using GridSearchCV with cross-validation and F1-score evaluation.",
-        },
-        {
-          step: "Model Evaluation",
-          desc: "Evaluated performance using Confusion Matrix, Accuracy, Precision, Recall, and F1-Score metrics.",
+          step: "Decision Tree Modeling & Tuning",
+          desc: "Trained Decision Tree classifier optimized via GridSearchCV with balanced class weighting strategies.",
         },
       ],
 
       visualizations: [
         {
-          title: 'Model Performance - Before vs After Hyperparameter tuning',
-          type: 'bar',
+          title: "Model Performance - Before vs After Tuning",
+          type: "bar",
           data: {
-            labels: ['Accuracy', 'Precision (Fraud)', 'Recall (Fraud)', 'F1-Score (Fraud)'],
-            values: [0.8773, 1.00, 0.62, 0.77],
+            labels: ["Accuracy", "Precision (Fraud)", "Recall (Fraud)", "F1-Score (Fraud)"],
+            values: [0.8773, 1.0, 0.62, 0.77],
           },
-          yLabel: 'Score',
+          yLabel: "Score",
         },
         {
-          title: 'Confusion Matrix Result (After Hyperparameter tuning)',
-          type: 'doughnut',
+          title: "Confusion Matrix Result",
+          type: "doughnut",
           data: {
-            labels: ['True Negative', 'True Positive', 'False Positive', 'False Negative'],
+            labels: ["True Negative", "True Positive", "False Positive", "False Negative"],
             values: [6752, 2010, 0, 1238],
-          },
-        },
-        {
-          title: 'Class Distribution After SMOTE',
-          type: 'bar',
-          data: {
-            labels: ['Normal (0)', 'Fraud (1)'],
-            values: [32500, 32500],   // after SMOTE (balanced)
-          },
-          yLabel: 'Jumlah Sampel (Train)',
-        },
-        {
-          title: 'Metrics Radar - Best Model',
-          type: 'radar',
-          data: {
-            labels: ['Accuracy', 'Precision', 'Recall', 'F1-Score', 'Stability'],
-            values: [0.877, 1.00, 0.62, 0.77, 0.85],
           },
         },
       ],
 
       insights: [
-        "The optimized Decision Tree model achieved strong fraud classification performance after hyperparameter tuning.",
-        "SMOTE successfully improved class balance, allowing the model to better recognize rare fraud patterns.",
-        "The model achieved extremely high fraud precision, minimizing false positive transaction blocking.",
-        "Simpler tree structures produced more stable performance and reduced overfitting risk.",
-        "Recall results revealed the trade-off between fraud detection sensitivity and customer convenience.",
-        "Transaction behavior and risk-related features played significant roles in identifying fraudulent activity patterns.",
+        "The optimized Decision Tree achieved 1.00 Precision on fraud detection, effectively preventing costly false-alarm transaction blocks.",
+        "SMOTE balanced training instances to 32,500 per class, enabling the model to learn subtle fraud signatures.",
       ],
 
       notebookUrl: "",
-      githubUrl: "",
-
+      githubUrl: "https://github.com/muhammad-haikal-mh",
     },
   },
 
   {
     id: "11",
     nama: "Student Lifestyle & Academic Performance Clustering",
-    desc: "Applied K-Means clustering to segment students based on lifestyle habits and academic performance in order to identify behavioral patterns influencing educational outcomes.",
+    desc: "K-Means unsupervised clustering to segment students based on lifestyle habits and academic performance, identifying key behavioral patterns impacting GPA.",
     techStack: [python, sklearn, pandas, numpy, matplotlib],
     img: kmeans,
+    badge: "Unsupervised Clustering",
     intro:
-    "This project explores how student lifestyle factors such as study habits, sleep duration, stress levels, attendance, and screen time relate to academic performance using unsupervised machine learning techniques.",
+      "This project explores how student lifestyle factors such as study habits, sleep duration, stress levels, attendance, and screen time relate to academic performance using unsupervised machine learning techniques.",
     porto:
-    "The project combines exploratory data analysis, feature preprocessing, dimensionality reduction, and K-Means clustering to identify meaningful student behavior profiles and performance patterns.",
-    category: "Data",
+      "Combines exploratory data analysis, feature preprocessing, dimensionality reduction, and K-Means clustering to identify student behavior profiles.",
+    category: "Machine Learning",
+    demo: "",
+    githubUrl: "https://github.com/muhammad-haikal-mh",
 
     caseStudy: {
       problem:
-      "Students demonstrate diverse academic behaviors and lifestyle patterns that can influence learning outcomes. Without systematic segmentation, it becomes difficult to understand student characteristics and identify groups requiring targeted educational support.",
+        "Students demonstrate diverse academic behaviors that influence learning outcomes. Without systematic segmentation, it is difficult to identify groups requiring targeted academic and wellness interventions.",
 
       dataset: {
         source: "Kaggle - Student Lifestyle & Performance Dataset",
         rows: 1000,
         features: 11,
-        target: "Cluster Segmentation (Unsupervised Learning)",
+        target: "Cluster Segmentation (Unsupervised)",
       },
 
       methodology: [
         {
-          step: "Exploratory Data Analysis",
-          desc: "Analyzed numerical feature distributions, academic performance trends, and behavioral patterns across multiple student attributes.",
+          step: "Exploratory Analysis & Normalization",
+          desc: "Analyzed study hours, sleep, attendance, and stress levels; scaled variables via StandardScaler.",
         },
         {
-          step: "Feature Selection",
-          desc: "Selected key variables including study hours, sleep duration, attendance percentage, stress level, screen time, and CGPA.",
+          step: "Optimal Cluster Evaluation",
+          desc: "Determined optimal k=3 using Elbow Method and Silhouette Score analysis.",
         },
         {
-          step: "Data Preprocessing",
-          desc: "Applied StandardScaler normalization to ensure balanced Euclidean distance calculations during clustering.",
-        },
-        {
-          step: "Optimal Cluster Selection",
-          desc: "Used Elbow Method and Silhouette Score evaluation to determine the most suitable number of clusters.",
-        },
-        {
-          step: "K-Means Clustering",
-          desc: "Trained K-Means clustering model and assigned cluster labels to each student profile.",
-        },
-        {
-          step: "Cluster Interpretation",
-          desc: "Performed cluster profiling using feature averages, PCA visualization, and academic behavior comparisons.",
+          step: "Profiling & Interpretation",
+          desc: "Interpreted clusters into Efficient Performers, Struggling Hard Workers, and Disengaged Students.",
         },
       ],
 
       visualizations: [
         {
-          title: 'Silhouette Score per K',
-          type: 'line',
+          title: "Silhouette Score per K",
+          type: "line",
           data: {
-            labels: ['K=2', 'K=3', 'K=4', 'K=5', 'K=6', 'K=7', 'K=8', 'K=9'],
-            values: [0.2385, 0.21, 0.19, 0.18, 0.17, 0.16, 0.15, 0.14],
+            labels: ["K=2", "K=3", "K=4", "K=5", "K=6"],
+            values: [0.2385, 0.21, 0.19, 0.18, 0.17],
           },
-          yLabel: 'Silhouette Score',
+          yLabel: "Silhouette Score",
         },
         {
-          title: 'Average CGPA per Cluster',
-          type: 'bar',
+          title: "Average Stress Level per Cluster",
+          type: "bar",
           data: {
-            labels: ['Cluster 1 High Performer', 'Cluster 2 High Stress', 'Cluster 3 Low Effort'],
-            values: [6.72, 6.89, 8.27],   // → update sesuai df.groupby('cluster')['CGPA'].mean()
+            labels: ["Cluster 1 (Hard Worker)", "Cluster 2 (Efficient)", "Cluster 3 (Disengaged)"],
+            values: [6.48, 4.11, 3.18],
           },
-          yLabel: 'Average CGPA',
+          yLabel: "Stress Level (1-10)",
         },
-        {
-          title: 'Average Stress Level per Cluster',
-          type: 'bar',
-          data: {
-            labels: ['Cluster 1 High Performer', 'Cluster 2 High Stress', 'Cluster 3 Low Effort'],
-            values: [3.17, 6.47, 4.10],   // update sesuai df.groupby('cluster')['Stress_Level_1_to_10'].mean()
-          },
-          yLabel: 'Average Stress Level (1–10)',
-        },
-        {
-          title: 'Average Study Hours per Cluster',
-          type: 'radar',
-          data: {
-            labels: ['Study Hours', 'Sleep Hours', 'Attendance %', 'Internal Marks', 'CGPA'],
-            values: [2.53, 6.47, 71.68, 59.48, 6.72],   //  update dari groupby mean Cluster 1
-          },
-        },
-      ],
-
-      screenshots: [
-
       ],
 
       insights: [
-        "K-Means clustering (k=3) segmented 1,000 students into three distinct profiles based on study habits, sleep, stress, screen time, attendance, and GPA.",
-        "Cluster 2 'Efficient Performers': nearly identical study hours to Cluster 1 (~4.78 hrs/day) but significantly lower stress (4.11 vs 6.48) and higher CGPA (8.28 vs 6.90) quality of study matters more than quantity.",
-        "Cluster 1 'Struggling Hard Workers': the highest stress group (6.48/10) with moderate study hours and attendance (84%), yet only achieved middle-tier CGPA (6.90) high stress appears to hinder academic output.",
-        "Cluster 0 'Disengaged Students': lowest study hours (2.53/day), lowest attendance (71.68%), lowest stress (3.18), and lowest CGPA (6.73) low stress here reflects disengagement, not balance.",
-        "The key differentiator between Cluster 1 and Cluster 2 is not study hours but stress level suggesting stress management is a stronger predictor of academic success than time spent studying.",
-        "Attendance emerged as a clear separator: Cluster 0's low attendance (71.68%) correlates directly with poor academic outcomes, while Clusters 1 and 2 share similar attendance (~84%) yet differ vastly in performance.",
+        "Identified that stress management is a stronger predictor of high GPA than raw study hours.",
+        "Cluster 2 students maintained high GPA (8.28) with moderate study hours by keeping stress levels low.",
       ],
 
       notebookUrl: "",
-      githubUrl: "",
-
+      githubUrl: "https://github.com/muhammad-haikal-mh",
     },
   },
 
-
+  // ──────────────────────────────────────────
+  // 2. DATA ANALYTICS & BUSINESS INTELLIGENCE
+  // ──────────────────────────────────────────
   {
-    id: "12",
-    nama: "Jakarta Air Quality Analysis 2019-2020",
-    desc: "End-to-end data analysis project exploring Jakarta air quality trends during 2019–2020 using Python, MySQL, and Tableau to identify pollution patterns and environmental insights.",
-    techStack: [python, pandas, numpy, matplotlib, mysql, tableau],
-    img: null, // → Ganti dengan import gambar cover project kamu
+    id: "14",
+    nama: "Indonesia Stock Market Performance Analysis (2003–2024)",
+    desc: "21-year analysis of 29 IDX-listed companies across 8 sectors. Conducted time-series volatility exploration, COVID-19 comparative impact analysis, and K-Means risk-return clustering.",
+    techStack: [python, pandas, numpy, matplotlib, sklearn],
+    img: saham,
+    badge: "Financial Data Analytics",
     intro:
-      "This project analyzes Jakarta Air Quality Index (AQI) data from Bundaran HI monitoring station during 2019–2020. The analysis focuses on identifying pollution trends, dominant pollutants, and changes in air quality conditions before and during the COVID-19 period through data processing, exploratory analysis, and interactive dashboard visualization.",
+      "This project explores the historical performance of 29 companies listed on the Indonesia Stock Exchange (IDX) from 2003 to 2024. The analysis focuses on return behavior, market volatility, sector performance, and risk-return clustering.",
     porto:
-      "The project covers the complete data analysis pipeline starting from CSV dataset collection, SQL database integration, data preprocessing using Python libraries, exploratory data analysis, and Tableau dashboard development to visualize Jakarta air quality conditions and pollution patterns.",
-    category: "Data",
+      "Combines financial EDA, COVID-19 comparative periods (Pre, During, Post), Sharpe Ratio computations, and K-Means segmentation.",
+    category: "Data Analytics",
+    demo: "",
+    githubUrl: "https://github.com/muhammad-haikal-mh",
 
     caseStudy: {
       problem:
-        "ir pollution remains one of the major environmental issues in Jakarta due to dense population, industrial activity, and high vehicle emissions. Long-term exposure to unhealthy air quality may cause serious health problems such as respiratory diseases, asthma, and cardiovascular disorders. Therefore, a comprehensive data-driven analysis is needed to understand pollution patterns and support environmental monitoring and decision-making.",
+        "The Indonesian stock market experienced massive shifts during the COVID-19 pandemic. A granular 21-year analysis is required to understand risk-return behavior and track cluster migrations across economic cycles.",
 
       dataset: {
-        source: "Kaggle - Air Quality Index in Jakarta",
-        rows: 5173,
-        features: 11,
-        target: "categori",
+        source: "IDX Historical Stock Data (2003–2024)",
+        rows: 136599,
+        features: 7,
+        target: "Risk-Return Profiles & Sector Clusters",
       },
 
       methodology: [
         {
-          step: "Data Collection",
-          desc: "Collected AQI dataset from Kaggle containing Jakarta air quality measurements from Bundaran HI monitoring station.",
+          step: "Data Cleaning & Returns Calculation",
+          desc: "Validated 136,599 records, cleaned splits/dividends, and computed daily log returns.",
         },
         {
-          step: "Database Integration",
-          desc: "Imported CSV dataset into MySQL database to organize and manage structured air quality data.",
+          step: "COVID-19 Comparative Analysis",
+          desc: "Segmented data into Pre-COVID, COVID-19, and Post-COVID periods comparing volatility and Sharpe Ratios.",
         },
         {
-          step: "Data Cleaning & Preprocessing",
-          desc: "Handled missing values, standardized categorical values, cleaned inconsistent records, and prepared pollutant variables using Pandas and NumPy.",
-        },
-        {
-          step: "Exploratory Data Analysis",
-          desc: "Performed statistical analysis and visual exploration using Matplotlib to identify pollutant trends, category distribution, and air quality changes over time.",
-        },
-        {
-          step: "Dashboard Visualization",
-          desc: "Developed an interactive Tableau dashboard to present AQI trends, dominant pollutants, category comparisons, and yearly air quality insights.",
+          step: "K-Means Clustering",
+          desc: "Clustered stocks into Defensive, Aggressive, and High-Risk profiles using RobustScaler.",
         },
       ],
 
-      // Screenshots dari Tableau — uncomment dan isi setelah import gambar
-      // Contoh:
-      //   import dash1 from '../assets/projek/dashboard1.png'
-      //   import dash2 from '../assets/projek/dashboard2.png'
-      screenshots: [
-        // { img: dash1, caption: 'Overview Dashboard — Revenue by Region' },
-        // { img: dash2, caption: 'Product Analysis — Category Breakdown' },
+      visualizations: [
+        {
+          title: "Silhouette Score per Period",
+          type: "bar",
+          data: {
+            labels: ["COVID-19 Period", "Post-COVID-19 Period"],
+            values: [0.2435, 0.3825],
+          },
+          yLabel: "Silhouette Score",
+        },
+        {
+          title: "Post-COVID Cluster Distribution",
+          type: "doughnut",
+          data: {
+            labels: ["Defensive (16)", "Aggressive (8)", "High-Risk (5)"],
+            values: [16, 8, 5],
+          },
+        },
       ],
 
       insights: [
-        "During 2020, the number of days categorized as “BAIK” increased while “TIDAK SEHAT” categories decreased compared to 2019.",
-        "Air quality in Jakarta showed improvement during the COVID-19 period, likely influenced by reduced public and transportation activities.",
-        "PM10 and PM2.5 were identified as dominant pollutants contributing to unhealthy air quality levels.",
-        "The P90 and P95 AQI values in 2020 were lower than 2019, indicating reduced intensity and frequency of severe pollution days.",
-        "The number of days with AQI max values above 100 decreased significantly in 2020, and no AQI values exceeded 150 during the period.",
-        "Overall air quality conditions in both years were still dominated by the “Sedang” category, indicating pollution remained a persistent environmental concern.",
+        "Major banking stocks (BBCA, BBRI, BMRI) consistently anchored the Defensive cluster with resilient Sharpe Ratios.",
+        "Energy and commodity stocks shifted into the Aggressive cluster during post-pandemic economic recovery.",
       ],
 
       notebookUrl: "",
-      githubUrl: "",
+      githubUrl: "https://github.com/muhammad-haikal-mh",
     },
   },
+
   {
-    id: "13",
-    nama: "Bank Customer Churn Analysis",
-    desc: "Interactive data visualization project analyzing customer churn behavior in the banking industry using Tableau to identify retention risks, customer patterns, and business insights.",
-    techStack: [tableau],
-    img: churn,
+    id: "17",
+    nama: "HR Attrition Analytics Dashboard — Power BI",
+    desc: "Interactive HR analytics dashboard built in Power BI to analyze employee attrition behavior across departments, salary tiers, and overtime patterns with actionable retention strategies.",
+    techStack: [powerbi],
+    img: hrattrition,
+    badge: "Power BI & DAX Analytics",
     intro:
-      "This project explores customer churn patterns in the banking industry using demographic, financial, and customer activity data. The analysis focuses on understanding factors influencing churn behavior such as complaints, customer activity, age groups, account balance, and regional distribution through interactive Tableau dashboards",
+      "This project analyzes employee attrition patterns using the IBM HR Analytics dataset. The focus is identifying retention risks across overtime, job roles, age groups, and income tiers using dynamic DAX measures in Power BI.",
     porto:
-      "The project includes exploratory analysis and dashboard visualization to uncover customer retention risks and provide actionable business insights for improving customer loyalty strategies.",
-    category: "Data",
+      "Developed interactive Power BI dashboard featuring dynamic DAX KPIs, department drill-downs, and attrition risk heatmaps.",
+    category: "Data Analytics",
+    demo: "",
+    githubUrl: "https://github.com/muhammad-haikal-mh",
 
     caseStudy: {
       problem:
-        "Customer churn is one of the major challenges in the banking industry because losing customers can significantly impact revenue and long-term business growth. Although banks collect large volumes of customer data, identifying churn patterns and understanding the factors behind customer attrition remain difficult without proper analysis and visualization.",
+        "High employee attrition causes heavy recruitment costs and productivity loss. HR managers need real-time visualization to identify flight-risk departments and demographic groups.",
+
+      dataset: {
+        source: "IBM HR Analytics Employee Attrition",
+        rows: 1470,
+        features: 35,
+        target: "Employee Turnover Risk",
+      },
+
+      methodology: [
+        {
+          step: "Power Query ETL",
+          desc: "Cleaned redundant attributes and built calculated age-group bins and tenure segments.",
+        },
+        {
+          step: "Custom DAX Modeling",
+          desc: "Authored DAX measures for Attrition Rate, Total Headcount, Avg Monthly Income, and Satisfaction Indices.",
+        },
+        {
+          step: "Interactive Visuals",
+          desc: "Designed KPI cards, department matrices, and interactive slicers for business stakeholders.",
+        },
+      ],
+
+      screenshots: [{ img: hrattrition, caption: "Interactive HR Attrition Power BI Dashboard" }],
+
+      insights: [
+        "Overall attrition rate reached 16.1%, exceeding the recommended industry benchmark of 10%.",
+        "Employees working overtime exhibited 2x higher attrition risk compared to standard-hour peers.",
+        "Early-career employees aged 25-34 in R&D and Sales accounted for over 60% of total exits.",
+      ],
+
+      notebookUrl: "",
+      githubUrl: "https://github.com/muhammad-haikal-mh",
+    },
+  },
+
+  {
+    id: "13",
+    nama: "Bank Customer Churn Analysis — Tableau",
+    desc: "Interactive Tableau visualization project exploring banking churn factors including customer complaints, balance tiers, geography, and active engagement metrics.",
+    techStack: [tableau],
+    img: churn,
+    badge: "Tableau Visual Analytics",
+    intro:
+      "Explores banking customer churn behavior across 10,000 customers in Germany, France, and Spain through interactive Tableau dashboards.",
+    porto:
+      "Built multi-view Tableau story uncovering customer dissatisfaction indicators and retention priorities.",
+    category: "Data Analytics",
+    demo: "",
+    githubUrl: "https://github.com/muhammad-haikal-mh",
+
+    caseStudy: {
+      problem:
+        "Retaining existing customers is 5x cheaper than acquiring new ones. Banks need clear diagnostic dashboards to pinpoint why high-balance customers leave.",
+
       dataset: {
         source: "Kaggle - Bank Customer Churn Dataset",
         rows: 10000,
         features: 18,
-        target: "Customer Churn Analysis",
+        target: "Customer Retention Risk",
       },
 
       methodology: [
         {
-          step: "Data Collection",
-          desc: "Collected customer churn dataset containing demographic, financial, and behavioral customer information from Kaggle.",
+          step: "Tableau Data Prep",
+          desc: "Grouped age bands, balance quartiles, and country segments.",
         },
         {
-          step: "Dashboard Visualization",
-          desc: "Developed interactive Tableau dashboards to visualize churn rates, complaint trends, customer segmentation, and regional comparisons.",
-        },
-        {
-          step: "Business Insight Analysis",
-          desc: "Generated actionable insights to support customer retention strategies and improve service quality.",
+          step: "Dashboard Development",
+          desc: "Designed coordinated dashboards with cross-filtering and geographic maps.",
         },
       ],
 
-      // Screenshots dari Tableau — uncomment dan isi setelah import gambar
-      // Contoh:
-      //   import dash1 from '../assets/projek/dashboard1.png'
-      //   import dash2 from '../assets/projek/dashboard2.png'
-      screenshots: [
-        { img: churn, caption: 'Overview Dashboard using Tableau' },
+      screenshots: [{ img: churn, caption: "Tableau Executive Churn Dashboard" }],
+
+      insights: [
+        "Customer complaints were the single strongest predictor of churn, exhibiting a near 1:1 correlation in Germany.",
+        "Active high-balance members experienced higher attrition than expected, signaling high expectations that require dedicated account managers.",
+      ],
+
+      notebookUrl: "",
+      githubUrl: "https://github.com/muhammad-haikal-mh",
+    },
+  },
+
+  {
+    id: "12",
+    nama: "Jakarta Air Quality Analysis (2019–2020)",
+    desc: "End-to-end data analysis examining Jakarta Air Quality Index (AQI) trends before and during COVID-19 using Python, MySQL database integration, and Tableau dashboards.",
+    techStack: [python, pandas, numpy, matplotlib, mysql, tableau],
+    img: null,
+    badge: "SQL & Environmental Analytics",
+    intro:
+      "Analyzes Jakarta AQI records from the Bundaran HI monitoring station to examine the impact of COVID-19 mobility restrictions on dominant pollutants like PM2.5 and PM10.",
+    porto:
+      "Complete data workflow: CSV ingestion, relational MySQL storage, statistical analysis in Python, and Tableau visualization.",
+    category: "Data Analytics",
+    demo: "",
+    githubUrl: "https://github.com/muhammad-haikal-mh",
+
+    caseStudy: {
+      problem:
+        "Jakarta faces severe air quality challenges. Quantifying the effect of pandemic restrictions provides empirical evidence for urban environmental policymaking.",
+
+      dataset: {
+        source: "Kaggle - Bundaran HI AQI Dataset",
+        rows: 5173,
+        features: 11,
+        target: "Air Quality Category & Pollutant Concentration",
+      },
+
+      methodology: [
+        {
+          step: "MySQL Database Integration",
+          desc: "Designed relational schema and ingested daily environmental readings via SQL queries.",
+        },
+        {
+          step: "Exploratory Data Analysis",
+          desc: "Calculated P90/P95 pollution percentiles and pollutant correlation matrices.",
+        },
+        {
+          step: "Tableau Visualization",
+          desc: "Created comparative dashboards tracking pre-COVID vs lockdown air quality categories.",
+        },
       ],
 
       insights: [
-        "The overall customer churn rate reached 20.38% from a total of 10,000 customers.",
-        "Germany recorded the highest churn rate compared to France and Spain.",
-        "Middle-age customers with high account balances showed a higher tendency to churn.",
-        "Active members unexpectedly had a significantly higher churn rate (26.8%) compared to inactive members (14.3%).",
-        "Customer complaints showed a strong relationship with churn behavior, especially in Germany where complaint and churn numbers were nearly identical.",
-        "The analysis suggests that service quality improvement and faster complaint handling are critical to reducing customer churn.",
-        "Customer retention programs should prioritize active high-value customers while reactivation strategies may increase engagement from inactive users.",
+        "Good air quality days increased noticeably in 2020 during large-scale social restrictions (PSBB).",
+        "PM2.5 remained the primary pollutant exceeding WHO safety thresholds throughout the year.",
       ],
 
-      notebookUrl: "", // → Opsional: link Tableau Public dashboard
-      githubUrl: "", // → Opsional: link GitHub repository
+      notebookUrl: "",
+      githubUrl: "https://github.com/muhammad-haikal-mh",
     },
   },
 
   {
     id: "15",
-    nama: "Impact of Operational Hours on Laundry Customer Satisfaction",
-    desc: "Quantitative survey-based research analyzing the relationship between service operating hours and customer satisfaction using descriptive statistics, correlation analysis, and linear regression.",
+    nama: "Laundry Operational Hours & Customer Satisfaction",
+    desc: "Empirical survey research analyzing the relationship between business operating hours and customer satisfaction using Pearson correlation, linear regression, and Tableau.",
     techStack: [tableau],
     img: londri,
+    badge: "Statistical Regression Analysis",
     intro:
-    "This project investigates how laundry operational hours influence customer satisfaction through quantitative analysis and interactive data visualization. The study combines survey analysis, statistical methods, and dashboard visualization to identify service hour preferences and customer behavior patterns.",
+      "Quantitative research examining how extended service availability and early opening hours influence laundry consumer satisfaction across 300 surveyed respondents.",
     porto:
-    "The project includes survey design, statistical analysis, correlation testing, regression modeling, and Tableau dashboard visualization to evaluate how operational hour factors affect customer satisfaction levels.",
-    category: "Data",
+      "Survey design, Likert scale normalization, multiple linear regression modeling, and interactive Tableau dashboards.",
+    category: "Data Analytics",
+    demo: "",
+    githubUrl: "https://github.com/muhammad-haikal-mh",
+
     caseStudy: {
-    problem:
-    "As modern lifestyles become increasingly dynamic, laundry businesses are expected to provide services that are flexible and easily accessible. Operational hours are considered one of the key factors affecting customer convenience, yet their actual impact on customer satisfaction has rarely been measured empirically.",
+      problem:
+        "Urban consumers demand flexible service hours, yet small business owners lack empirical data on how operating hours directly impact satisfaction scores.",
 
-    dataset: {
-      source: "Primary Survey Dataset — Google Form Questionnaire",
-      rows: 300,
-      features: 6,
-      target: "Customer Satisfaction Score (Likert Scale 1-5)",
-    },
+      dataset: {
+        source: "Primary Survey Data (Google Forms)",
+        rows: 300,
+        features: 6,
+        target: "Customer Satisfaction Index (Likert 1-5)",
+      },
 
-    methodology: [
-      {
-        step: "Survey Design",
-        desc: "Designed a questionnaire containing five operational hour indicators and one customer satisfaction variable using a Likert scale distributed through Google Forms.",
-      },
-      {
-        step: "Data Collection",
-        desc: "Collected responses from 300 laundry customers through online surveys with demographic segmentation analysis.",
-      },
-      {
-        step: "Descriptive Statistics",
-        desc: "Calculated mean, mode, and standard deviation values to identify respondent perception patterns.",
-      },
-      {
-        step: "Correlation Analysis",
-        desc: "Performed Pearson correlation analysis to measure relationships between operational hour indicators and customer satisfaction.",
-      },
-      {
-        step: "Linear Regression",
-        desc: "Applied simple and multiple linear regression models to evaluate the contribution of service-hour variables toward customer satisfaction.",
-      },
-      {
-        step: "Dashboard Visualization",
-        desc: "Developed Tableau dashboards containing respondent profiles, satisfaction distribution, regression visualizations, and ideal operational hour analysis.",
-      },
-    ],
-
-      screenshots: [
-        { img: londri, caption: 'Dashboard Using Tableau' },
-        // { img: dash2, caption: 'Product Analysis — Category Breakdown' },
+      methodology: [
+        {
+          step: "Survey Design & Data Collection",
+          desc: "Structured Likert questionnaire administered to 300 regular laundry service customers.",
+        },
+        {
+          step: "Statistical Regression",
+          desc: "Calculated Pearson r coefficients and evaluated multiple linear regression models.",
+        },
+        {
+          step: "Tableau Reporting",
+          desc: "Built demographic breakdown and customer peak demand hour charts.",
+        },
       ],
 
-    insights: [
-      "Operational hours showed a significant influence on customer satisfaction with an R² value of 64.89%.",
-      "Operational hour suitability was identified as the strongest factor, with the highest correlation value of 0.732.",
-      "Extended service hours received the highest average score, indicating strong customer interest in longer operational availability.",
-      "Peak customer activity occurred around 7:00 AM, suggesting demand for earlier business opening hours.",
-      "All operational hour indicators showed positive relationships with customer satisfaction.",
-      "The combined regression model demonstrated stronger predictive capability compared to individual variables, indicating customer satisfaction is multidimensional.",
-    ],
+      screenshots: [{ img: londri, caption: "Tableau Regression & Survey Insights" }],
 
-    notebookUrl: "",
-    githubUrl: "",
+      insights: [
+        "Operating hour suitability demonstrated a strong positive correlation (r = 0.732) with satisfaction.",
+        "Peak morning demand occurred at 07:00 AM, confirming significant untapped demand for earlier business opening.",
+      ],
 
+      notebookUrl: "",
+      githubUrl: "https://github.com/muhammad-haikal-mh",
     },
   },
-  {
-    id: "1",
-    nama: "muhammadhaikal.vercel.app",
-    desc: "Personal website & portfolio, built from scratch using Javascript, TailwindCSS, React, Vite, Framer motion and React Router.",
-    techStack: [js, riek, tailwind, vite, framer, router],
-    img: p8,
-    intro:
-      "This is a personal website to showcase my projects and my skill development.",
-    porto: "To showcasing my awesome projects. You can see this feature",
-    demo: "https://muhammadhaikal.vercel.app/",
-    category: "Web Dev",
-  },
-  {
-    id: "24",
-    nama: "Genting: Generasi Anti Stunting",
-    desc: "Health-tech platform for stunting prevention featuring real-time doctor consultation, AI health assistant, and AI-powered food scanner, built with Next.js, Supabase, TypeScript, and TailwindCSS.",
-    techStack: [next, ts, tailwind],
-    img: p9,
-    intro:
-      "Genting (Generasi Anti Stunting) is a digital health platform designed to help communities understand, prevent, and address stunting through education, doctor consultation, and AI-powered tools.",
-    porto:
-      "This platform combines health education and a stunting prevention roadmap, real-time consultation with verified doctors, AI-based health consultation, and an AI food scanner that analyzes the nutritional content of meals — all integrated with a secure payment gateway for premium services.",
-    demo: "https://genting-apps.vercel.app/",
-    category: "Web Dev",
-  },
+
+  // ──────────────────────────────────────────
+  // 3. WEB APPS (AI-POWERED PLATFORMS)
+  // ──────────────────────────────────────────
   {
     id: "25",
-    nama: "SIGMA: Sistem Informasi Geografis Makan Bergizi Gratis",
-    desc: "A reporting and monitoring platform for the Makan Bergizi Gratis (MBG) program, featuring an AI-powered map that clusters schools by location to recommend optimal SPPG (food service unit) placement. Built with Next.js and TypeScript.",
-    techStack: [next, ts, tailwind],
+    nama: "SIGMA: GIS Makan Bergizi Gratis (AI School Clustering)",
+    desc: "Reporting and monitoring platform for Indonesia's Makan Bergizi Gratis (MBG) program featuring an AI map that clusters schools using K-Means to optimize SPPG service unit placement. Built with Next.js and TypeScript.",
+    techStack: [next, ts, tailwind, python],
     img: p10,
+    badge: "AI Spatial Clustering & Web Platform",
     intro:
-      "MBG is a web platform built to support the Makan Bergizi Gratis program by providing a reporting system for monitoring program implementation, alongside an AI-driven recommendation feature for SPPG placement.",
+      "SIGMA is a web platform built to support the Makan Bergizi Gratis (MBG) initiative by combining program reporting with an AI-driven geospatial recommendation system for SPPG placement.",
     porto:
-      "As the full-stack developer, I built this platform using Next.js and TypeScript - covering the reporting system, database, and an AI-powered map feature that clusters schools based on their geographic location. By grouping schools into clusters, the system helps identify the most strategic locations to place SPPG (Satuan Pelayanan Pemenuhan Gizi) units, ensuring food distribution coverage is more efficient and reaches schools that are geographically closer to each service point.",
+      "As full-stack developer, I engineered the Next.js and TypeScript platform featuring an AI clustering engine (K-Means) that groups geographic school coordinates to calculate optimal SPPG kitchen hubs, maximizing distribution efficiency.",
+    category: "Web Apps",
     demo: "",
-    category: "Web Dev",
+    githubUrl: "https://github.com/muhammad-haikal-mh",
   },
+
   {
-    id: "2",
-    nama: "keberagaman nusantara",
-    desc: "Nusantara’s culture from Sabang to Merauke features dances, music, crafts, and local food. Celebrate Indonesia’s rich heritage.",
-    techStack: [js, tailwind, tml],
-    img: p2,
-    intro: "",
-    porto: "",
-    demo: "https://muhammad-haikal-mh.github.io/projek-1/",
-    category: "Web Dev",
+    id: "24",
+    nama: "Genting: Generasi Anti Stunting (AI Health & Food Scanner)",
+    desc: "Health-tech platform for stunting prevention featuring real-time doctor consultation, AI health assistant, and AI-powered food nutrition scanner built with Next.js, Supabase, TypeScript, and TailwindCSS.",
+    techStack: [next, ts, tailwind],
+    img: p9,
+    badge: "Computer Vision & Health AI",
+    intro:
+      "Genting (Generasi Anti Stunting) is a digital healthcare platform designed to combat childhood stunting through parental education, verified doctor consultations, and AI tools.",
+    porto:
+      "Integrated an AI meal scanner that estimates nutritional balance and caloric density from meal photos alongside an AI health consultant chatbot for continuous stunting prevention guidance.",
+    category: "Web Apps",
+    demo: "https://genting-apps.vercel.app/",
+    githubUrl: "https://github.com/muhammad-haikal-mh",
   },
-  {
-    id: "3",
-    nama: "spotify clone",
-    desc: "inspired by Spotify. explore, listen, and enjoy your favorite tunes seamlessly. Built from scratch using Javascript, React JS, TailwindCSS, Vite, and Router.",
-    techStack: [js, riek, tailwind, vite, router],
-    img: p3,
-    intro: "",
-    porto: "",
-    category: "Web Dev",
-  },
-  {
-    id: "4",
-    nama: "Disney Hotstar clone",
-    desc: "inspired by Disney - watch beloved movies and shows anytime, anywhere. Built from scratch using  Javascript, React, TailwindCSS, and Vite.",
-    techStack: [js, riek, tailwind, vite],
-    img: p4,
-    intro: "",
-    porto: "",
-    category: "Web Dev",
-  },
-  {
-    id: "5",
-    nama: "e-commerce miniture",
-    desc: "A simple mini e-commerce app, buy your favorite products easily. Built from scratch using Javascript, React, TailwindCSS, Vite, Router and Redux.",
-    techStack: [js, riek, tailwind, vite, router, redux],
-    img: p5,
-    intro: "",
-    porto: "",
-    category: "Web Dev",
-  },
-  {
-    id: "6",
-    nama: "e-commerce ecoRags",
-    desc: "Eco Green-themed competition team creation platform make your activities successful with an environmentally friendly team.",
-    techStack: [js, tailwind, tml],
-    img: p6,
-    intro: "",
-    porto: "",
-    demo: "https://barudak-sikece-fashion-hijau-berkelanjutan-xrgj.vercel.app/edu4.html",
-    category: "Web Dev",
-  },
-  {
-    id: "7",
-    nama: "portfolio",
-    desc: "Personal website & portfolio, built from scratch using Javascript, TailwindCSS, Vite and HTML.Designed with clean UI and responsiveness in mind",
-    techStack: [js, tailwind, vite, tml],
-    img: p7,
-    intro: "",
-    porto: "",
-    category: "Web Dev",
-  },
+
   {
     id: "8",
-    nama: "Siaga Manado",
-    desc: "A disaster reporting and early-warning web app for Manado city, featuring role-based dashboards (User, Admin, BPBD), an AI-powered disaster map using K-Means clustering, and a full reporting & education system. Built as a university group project using Laravel.",
+    nama: "Siaga Manado — Smart Disaster Early Warning & AI Map",
+    desc: "Disaster reporting and early-warning web application for Manado city featuring role-based dashboards (User, Admin, BPBD) and an AI-powered disaster map utilizing K-Means spatial clustering. Built with Laravel and MySQL.",
     techStack: [lara, tailwind, mysql],
     img: p1,
+    badge: "Spatial AI & Incident Management",
     intro:
-      "Siaga Manado is a disaster management platform built to help the Manado community report disasters in real-time, access disaster preparedness education, and enable local authorities (BPBD) to monitor and respond to incidents more effectively.",
+      "Siaga Manado is a disaster management platform built to help the Manado city community report emergencies in real-time while assisting authorities (BPBD) in coordinating swift responses.",
     porto:
-      "As the full-stack developer on this university team project, I built the entire system using Laravel — from the database structure and authentication system to the three-role dashboard (User, Admin, and BPBD) and the AI-powered disaster map. The map feature applies K-Means clustering to group reported disaster locations, helping authorities quickly identify disaster-prone zones and prioritize response areas across the city.",
+      "Engineered the full system with Laravel and MySQL: authentication, 3-tier role dashboards, real-time citizen reports, and an AI spatial map applying K-Means clustering to identify high-density disaster zones.",
+    category: "Web Apps",
     demo: "",
-    category: "Web Dev",
+    githubUrl: "https://github.com/muhammad-haikal-mh",
   },
-
 ];
 
+// ==========================================
+// FILTERED SKILLS & TOOLS (HIGH-VALUE TECH STACK)
+// ==========================================
 export const icon = [
-  {
-    id: "1",
-    nama: "HTML",
-    icon: tml,
-  },
-  {
-    id: "2",
-    nama: "CSS",
-    icon: css,
-  },
-  {
-    id: "3",
-    nama: "Javascript",
-    icon: js,
-  },
-  {
-    id: "4",
-    nama: "TailwindCSS",
-    icon: tailwind,
-  },
-  {
-    id: "5",
-    nama: "Vite ",
-    icon: vite,
-  },
-  {
-    id: "6",
-    nama: "React JS",
-    icon: riek,
-  },
-  {
-    id: "7",
-    nama: "React Router",
-    icon: router,
-  },
-  {
-    id: "8",
-    nama: "Redux",
-    icon: redux,
-  },
-  {
-    id: "9",
-    nama: "Next JS",
-    icon: next,
-  },
-  {
-    id: "10",
-    nama: "Tableau",
-    icon: tableau,
-  },
-  {
-    id: "11",
-    nama: "Python",
-    icon: python,
-  },
-  {
-    id: "12",
-    nama: "Numpy",
-    icon: numpy,
-  },
-  {
-    id: "13",
-    nama: "Pandas",
-    icon: pandas,
-  },
-  {
-    id: "14",
-    nama: "Scikit-learn",
-    icon: sklearn,
-  },
-  {
-    id: "15",
-    nama: "Matplotlib",
-    icon: matplotlib,
-  },
-  {
-    id: "16",
-    nama: "MySQL",
-    icon: mysql,
-  },
-  {
-    id: "17",
-    nama: "MongoDB",
-    icon: mongo,
-  },
-  {
-    id: "18",
-    nama: "TypeScript",
-    icon: ts,
-  },
+  { id: "1", nama: "Python", icon: python },
+  { id: "2", nama: "Scikit-Learn", icon: sklearn },
+  { id: "3", nama: "PyTorch", icon: pytorchIcon },
+  { id: "4", nama: "Pandas", icon: pandas },
+  { id: "5", nama: "NumPy", icon: numpy },
+  { id: "6", nama: "Matplotlib", icon: matplotlib },
+  { id: "7", nama: "Tableau", icon: tableau },
+  { id: "8", nama: "Power BI", icon: powerbi },
+  { id: "9", nama: "MySQL", icon: mysql },
+  { id: "10", nama: "MongoDB", icon: mongo },
+  { id: "11", nama: "JavaScript", icon: js },
+  { id: "12", nama: "TypeScript", icon: ts },
+  { id: "13", nama: "React JS", icon: riek },
+  { id: "14", nama: "Next.js", icon: next },
+  { id: "15", nama: "Express.js", icon: expressIcon },
+  { id: "16", nama: "TailwindCSS", icon: tailwind },
 ];

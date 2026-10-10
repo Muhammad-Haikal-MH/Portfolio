@@ -2,13 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
-import { LuLayoutDashboard } from "react-icons/lu";
 import { GoPerson, GoProject } from "react-icons/go";
 import { GiAchievement } from "react-icons/gi";
 import { GrContact } from "react-icons/gr";
 import { HiOutlineHomeModern } from "react-icons/hi2";
 import { HiMenuAlt1 } from "react-icons/hi";
-import { BsPatchCheckFill } from "react-icons/bs";
+import { BsPatchCheckFill, BsRobot } from "react-icons/bs";
 import foto from "./assets/poto.jpeg";
 import { NavLink, useLocation } from "react-router";
 import { useMediaQuery } from "react-responsive";
@@ -155,58 +154,83 @@ export default function Sidebar() {
         {/* menu */}
         <div className="flex flex-col h-full">
           <ul
-            className={`whitespace-pre py-5 flex flex-col gap-3 font-medium overflow-x-hidden ${isOpen ? "px-5" : "px-2.5"}`}
+            className={`whitespace-pre py-4 flex flex-col gap-2.5 font-medium overflow-x-hidden ${isOpen ? "px-5" : "px-2.5"}`}
           >
-            <li className="group hover:bg-neutral-200 hover:dark:bg-neutral-800 hover:rounded-md hover:scale-110 duration-150">
+            {/* 1. Project on TOP */}
+            <li className="group hover:bg-neutral-200 hover:dark:bg-neutral-800 hover:rounded-md hover:scale-105 duration-150">
+              <NavLink to="/project" className={"link flex items-center justify-between"}>
+                <div className="flex items-center gap-3">
+                  <GoProject
+                    size={22}
+                    className="min-w-max group-hover:-rotate-[20deg] duration-300 text-blue-500"
+                  />
+                  <span>Projects</span>
+                </div>
+                {isOpen && (
+                  <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 font-semibold border border-blue-500/20">
+                    Main
+                  </span>
+                )}
+              </NavLink>
+            </li>
+
+            {/* 2. Home */}
+            <li className="group hover:bg-neutral-200 hover:dark:bg-neutral-800 hover:rounded-md hover:scale-105 duration-150">
               <NavLink to="/" className={"link"}>
                 <HiOutlineHomeModern
-                  size={23}
-                  className="min-w-max group-hover:-rotate-[25deg] duration-300"
+                  size={22}
+                  className="min-w-max group-hover:-rotate-[20deg] duration-300"
                 />
                 Home
               </NavLink>
             </li>
-            <li className="group hover:bg-neutral-200 hover:dark:bg-neutral-800 hover:rounded-md hover:scale-110 duration-150">
+
+            {/* 3. About */}
+            <li className="group hover:bg-neutral-200 hover:dark:bg-neutral-800 hover:rounded-md hover:scale-105 duration-150">
               <NavLink to="/about" className={"link"}>
                 <GoPerson
-                  size={23}
-                  className="min-w-max group-hover:-rotate-[25deg] duration-300"
+                  size={22}
+                  className="min-w-max group-hover:-rotate-[20deg] duration-300"
                 />
                 About
               </NavLink>
             </li>
-            <li className="group hover:bg-neutral-200 hover:dark:bg-neutral-800 hover:rounded-md hover:scale-110 duration-150">
-              <NavLink to="/dashboard" className={"link"}>
-                <LuLayoutDashboard
-                  size={23}
-                  className="min-w-max group-hover:-rotate-[25deg] duration-300"
-                />
-                Dashboard
-              </NavLink>
-            </li>
-            <li className="group hover:bg-neutral-200 hover:dark:bg-neutral-800 hover:rounded-md hover:scale-110 duration-150">
-              <NavLink to="/Achievement" className={"link"}>
+
+            {/* 4. Achievement */}
+            <li className="group hover:bg-neutral-200 hover:dark:bg-neutral-800 hover:rounded-md hover:scale-105 duration-150">
+              <NavLink to="/achievement" className={"link"}>
                 <GiAchievement
-                  size={23}
-                  className="min-w-max group-hover:-rotate-[25deg] duration-300"
+                  size={22}
+                  className="min-w-max group-hover:-rotate-[20deg] duration-300"
                 />
                 Achievement
               </NavLink>
             </li>
-            <li className="group hover:bg-neutral-200 hover:dark:bg-neutral-800 hover:rounded-md hover:scale-110 duration-150">
-              <NavLink to="/project" className={"link"}>
-                <GoProject
-                  size={23}
-                  className="min-w-max group-hover:-rotate-[25deg] duration-300"
-                />
-                Project
+
+            {/* 5. AI Assistant */}
+            <li className="group hover:bg-neutral-200 hover:dark:bg-neutral-800 hover:rounded-md hover:scale-105 duration-150">
+              <NavLink to="/ai-assistant" className={"link flex items-center justify-between"}>
+                <div className="flex items-center gap-3">
+                  <BsRobot
+                    size={22}
+                    className="min-w-max group-hover:-rotate-[20deg] duration-300 text-emerald-500"
+                  />
+                  <span>Ask AI</span>
+                </div>
+                {isOpen && (
+                  <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold border border-emerald-500/20 animate-pulse">
+                    AI
+                  </span>
+                )}
               </NavLink>
             </li>
-            <li className="group hover:bg-neutral-200 hover:dark:bg-neutral-800 hover:rounded-md hover:scale-110 duration-150">
-              <NavLink to="/Contact" className={"link"}>
+
+            {/* 6. Contact */}
+            <li className="group hover:bg-neutral-200 hover:dark:bg-neutral-800 hover:rounded-md hover:scale-105 duration-150">
+              <NavLink to="/contact" className={"link"}>
                 <GrContact
-                  size={23}
-                  className="min-w-max group-hover:-rotate-[25deg] duration-300"
+                  size={22}
+                  className="min-w-max group-hover:-rotate-[20deg] duration-300"
                 />
                 Contact
               </NavLink>
@@ -214,8 +238,8 @@ export default function Sidebar() {
           </ul>
 
           <span className=" border-b mx-5 mt-1" />
-          <span className={`mt-5 mx-5 text-sm ${isOpen ? "block" : "hidden"}`}>
-            COPYRIGHT &copy; 2025 <br /> Muhammad Haikal
+          <span className={`mt-5 mx-5 text-xs text-neutral-400 dark:text-neutral-500 ${isOpen ? "block" : "hidden"}`}>
+            COPYRIGHT &copy; 2026 <br /> Muhammad Haikal
           </span>
         </div>
 

@@ -200,14 +200,12 @@ export default function CaseStudyChart({
         : Bar;
 
   return (
-    <div className="rounded-xl border-[1.5px] border-neutral-300 dark:border-[#333333] p-1 shadow-sm">
-      <div className="rounded-lg bg-gradient-to-b from-neutral-200 to-neutral-100 dark:from-[#242424] dark:to-neutral-900 p-5">
-        <h3 className="text-sm font-semibold mb-4 text-neutral-700 dark:text-neutral-300">
-          {title}
-        </h3>
-        <div className="h-[260px]">
-          <ChartComponent data={data} options={options} />
-        </div>
+    <div className="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-[#161616] p-5 shadow-sm">
+      <h3 className="text-sm font-semibold mb-4 text-neutral-800 dark:text-neutral-200">
+        {title}
+      </h3>
+      <div className="h-[260px]">
+        <ChartComponent data={data} options={options} />
       </div>
     </div>
   );
